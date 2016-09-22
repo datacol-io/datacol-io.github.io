@@ -985,12 +985,11 @@
 /* Banner */
 
 	#banner {
-		background-color: #666666;
-		background-image: url("../images/banner.jpg");
+		background-color: #f5f5f6;
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
-		color: #d8d8d8;
+		color: #504A5A;
 		padding: 14em 0;
 		text-align: center;
 		position: relative;
@@ -1016,7 +1015,8 @@
 			}
 
 		#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
-			color: #ffffff;
+			color: #504A5A;
+			font-weight: 800;
 		}
 
 		#banner .button.alt {
