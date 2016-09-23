@@ -1,7 +1,8 @@
 /*----------overrides-----*/
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   padding-top: 60px;
+  font-size: 15px;
 }
 .btn-big {
   display: block;
@@ -25,6 +26,14 @@ body {
 }
 .main-content {
   min-height: 78vh;
+}
+.form-control {
+  padding: 12px;
+  height: 46px;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ccc;
 }
 /*--------navigation---------*/
 .navbar-default {
@@ -124,7 +133,7 @@ body {
 /*-----------Banner---------*/
 .banner {
   min-height: 600px;
-  padding: 7em 0;
+  padding: 6em 0;
   background: linear-gradient(#7532c7,#32c7c2);
 	position: relative;
 }
@@ -134,8 +143,7 @@ body {
 }
 .banner-message h2 {
   color: #fff;
-  text-transform: uppercase;
-  font-size: 55px;
+  font-size: 60px;
   line-height: 70px;
   font-weight: 700;
 }
@@ -174,6 +182,32 @@ body {
 .feature-item-image img {
   max-width: 100%;
   height: auto;
+}
+.feature-item-content {
+  padding: 15px;
+}
+.feature-item-content h4 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+.feature-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+.feature-points > li {
+  display: block;
+  position: relative;
+  padding: 5px 0 0 18px;
+}
+.feature-points > li::before {
+  content: "\f058";
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  color: #31c685;
+  top: 8px;
+  left: 0;
 }
 /*--------how it works-------*/
 .how-it-works {
@@ -236,7 +270,6 @@ body {
 }
 .plan-content {
   border: 1px solid #f6f6f6;
-  /*box-shadow: 0 0 2px #ddd;*/
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
   min-height: 320px;
   border-radius: 3px;
@@ -276,4 +309,19 @@ body {
 }
 .plan-footer {
   padding: 12px 15px;
+}
+.contact-header {
+  background: linear-gradient(#7532c7,#32c7c2);
+  padding: 50px 0;
+}
+.contact-header h2 {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 33px;
+}
+.contact-wraper {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
