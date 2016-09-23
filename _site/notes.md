@@ -70,3 +70,5 @@ name, company email, phone number [ TRY ]
 reference:
 https://www.flydata.com/
 https://skyvia.com/data-integration/replication
+https://dribbble.com/shots/2071614-Pricing-plans
+https://dribbble.com/shots/1766161-Home-Renovations/attachments/287933
