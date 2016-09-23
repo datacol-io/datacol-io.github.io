@@ -1,9 +1,9 @@
 <!-- Header -->
-<header id="header" class="skel-layers-fixed" style="height: 70px; padding: 10px">
+<!-- <header id="header" class="skel-layers-fixed" style="height: 70px; padding: 10px">
   <div class="container">
     <h1>
         <a href="{{ site.baseurl }}/" class="site-title" >
-            <img src="{{site.baseurl}}/images/logo.png" />    
+            <img src="{{site.baseurl}}/images/logo.png" />
         </a>
     </h1>
     <nav id="nav">
@@ -15,4 +15,26 @@
         </ul>
     </nav>
   </div>
-</header>
+</header> -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{site.baseurl}}/images/logo.png" alt="" /></a>
+   </div>
+   <div id="navbar" class="collapse navbar-collapse">
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ site.baseurl }}/">How it works</a></li>
+        <li><a href="{{ site.baseurl }}/left-sidebar.html">Pricing</a></li>
+        <li><a href="{{ site.baseurl }}/right-sidebar.html">Developers</a></li>
+        <li><a href="#" class="button special">Free Trial</a></li>
+     </ul>
+   </div><!--/.nav-collapse -->
+ </div>
+</nav>

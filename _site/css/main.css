@@ -1,0 +1,12 @@
+.btn-yellow {
+  background-color: #f6b036;
+  color: #fff;
+}
+/*-----------Banner---------*/
+.banner {
+  min-height: 600px;
+  padding: 7em 0;
+  background: linear-gradient(#7532c7,#32c7c2);
+	text-align: center;
+	position: relative;
+}

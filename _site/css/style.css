@@ -985,17 +985,18 @@
 /* Banner */
 
 .banner {
-	background-color: #666666;
-	background-image: url("../images/datacol-banner.jpeg");
+	/*background-color: #666666;*/
+	/*background-image: url("../images/datacol-banner.jpeg");*/
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
 	color: #d8d8d8;
-	padding: 14em 0;
+	padding: 7em 0;
 	text-align: center;
 	position: relative;
+	background: linear-gradient(#7532c7,#32c7c2);
 }
-.banner:before {
+/*.banner:before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1004,7 +1005,7 @@
 	height: 100%;
 	/*background-color: rgba(46, 139, 208, 0.8);*/
 	background-color: rgba(0, 0, 0, 0.5);
-}
+}*/
 .banner .inner {
 	position: relative;
 	z-index: 1;

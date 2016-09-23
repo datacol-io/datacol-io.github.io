@@ -4,24 +4,24 @@
   {% include /head.html %}
 
 	<body id="top">
+    {% include /header.html %}
 
-        {% include /header.html %}
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner-message">
+        <h2>Connect your salesforce to <br> data systems seemlessly</h2>
+        <p>Datacol is the easiest way to connect salesforce to your back-office data system.</p>
+        <p> <img src="{{site.baseurl}}/images/flow1.png" /> </p>
+        <ul class="banner-actions">
+          <li><a href="#content" class="button big special">Get Start</a></li>
+          <li><a href="#elements" class="button big alt">Learn More</a></li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- Banner -->
-        <section id="banner">
-            <div class="inner">
-                <h2>Connect your salesforce to <br> data systems seemlessly</h2>
-                <p>Datacol is the easiest way to connect salesforce to your back-office data system.</p>
-                <p> <img src="{{site.baseurl}}/images/flow1.png" /> </p>
-                <ul class="actions">
-                    <li><a href="#content" class="button big special">Get Start</a></li>
-                    <li><a href="#elements" class="button big alt">Learn More</a></li>
-                </ul>
-            </div>
-        </section>
-        {{ content }}
-        {% include /footer.html %}
+    {{ content }}
 
-    </body>
+    {% include /footer.html %}
 
+  </body>
 </html>
