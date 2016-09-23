@@ -1,44 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  <!--
-	Ion by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<head>
-    <title>DataCol</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="/datacol/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="/datacol/css/bootstrap.css" />
-    <link rel="stylesheet" href="/datacol/css/main.css" />
+  <head>
+  <title>DataCol</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+  <script src="/datacol/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="/datacol/css/bootstrap.css" />
+  <link rel="stylesheet" href="/datacol/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/datacol/css/fonts.css" />
+  <link rel="stylesheet" href="/datacol/css/main.css" />
 </head>
 
 
 	<body id="top">
-    <!-- Header -->
-<!-- <header id="header" class="skel-layers-fixed" style="height: 70px; padding: 10px">
-  <div class="container">
-    <h1>
-        <a href="/datacol/" class="site-title" >
-            <img src="/datacol/images/logo.png" />
-        </a>
-    </h1>
-    <nav id="nav">
-        <ul>
-            <li><a href="/datacol/">How it works</a></li>
-            <li><a href="/datacol/left-sidebar.html">Pricing</a></li>
-            <li><a href="/datacol/right-sidebar.html">Developers</a></li>
-            <li><a href="#" class="button special">Free Trial</a></li>
-        </ul>
-    </nav>
-  </div>
-</header> -->
-
-<nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
    <div class="navbar-header">
      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -52,9 +30,9 @@
    <div id="navbar" class="collapse navbar-collapse">
      <ul class="nav navbar-nav navbar-right">
         <li><a href="/datacol/">How it works</a></li>
-        <li><a href="/datacol/left-sidebar.html">Pricing</a></li>
+        <li><a href="/datacol/pricing.html">Pricing</a></li>
         <li><a href="/datacol/right-sidebar.html">Developers</a></li>
-        <li><a href="#" class="button special">Free Trial</a></li>
+        <li class="freetrail-btn"><a href="#">Free Trial</a></li>
      </ul>
    </div><!--/.nav-collapse -->
  </div>
@@ -64,94 +42,125 @@
     <!-- Banner -->
     <section class="banner">
       <div class="banner-message">
-        <h2>Connect your salesforce to <br> data systems seemlessly</h2>
-        <p>Datacol is the easiest way to connect salesforce to your back-office data system.</p>
-        <p> <img src="/datacol/images/flow1.png" /> </p>
-        <ul class="banner-actions">
-          <li><a href="#content" class="button big special">Get Start</a></li>
-          <li><a href="#elements" class="button big alt">Learn More</a></li>
-        </ul>
+        <div class="container">
+          <h2>Connect your salesforce to <br> data systems seemlessly</h2>
+          <h6>Datacol is the easiest way to connect salesforce to your back-office data system.</h6>
+          <p class="banner-flow-image"> <img src="/datacol/images/flow1.png" /> </p>
+          <ul class="banner-actions">
+            <li><a href="#content" class="btn btn-big btn-yellow">Get Start</a></li>
+            <li><a href="#elements" class="btn btn-default btn-big">Learn More</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- One -->
-<section id="elements" class="wrapper style1">
-	<header class="major">
+    <section class="features-wraper">
+	<div class="feature-item">
+		<div class="container">
+			<div class="feature-item-image">
+				<img src="/datacol/images/realtime-synchronization.jpg" alt="" />
+			</div>
+			<div class="feature-item-content">
+				<h4>Realtime Syncronization</h4>
+				<ul>
+					<li>Bi-directional</li>
+				  <li>Supports custom objects and fields, including long text and attachments.</li>
+				  <li>Full recovery lost or corrupted to any point in time</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="feature-item bg-gray">
+		<div class="container">
+			<div class="feature-item-image right-side">
+				<img src="/datacol/images/realtime-synchronization.jpg" alt="" />
+			</div>
+			<div class="feature-item-content">
+				<h4>Management Console</h4>
+				<ul>
+					<li>No Coding required</li>
+				  <li>Point & click configuration</li>
+				  <li>Operation logs history</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="feature-item">
+		<div class="container">
+			<div class="feature-item-image">
+				<img src="/datacol/images/realtime-synchronization.jpg" alt="" />
+			</div>
+			<div class="feature-item-content">
+				<h4>Advance Integration tools</h4>
+				<ul>
+					<li>Sandbox, Test mode supported</li>
+				  <li>Automate, schedule and reuse operations</li>
+				  <li>Automatic schema change detection</li>
+					<li>Historical data refill</li>
+					<li>Force.com API optimization</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- One -->
+<section class="how-it-works">
+	<div class="section-header">
 		<h2>HOW IT WORKS</h2>
 		<p>Get start in 3 simple steps</p>
-	</header>
+	</div>
 	<div class="container">
 		<div class="row">
-			<div class="4u">
-				<section class="special box">
-					<i class="icon fa-area-chart major"></i>
+			<div class="col-md-4 col-sm-6">
+				<div class="step-item">
+					<img src="/datacol/images/setup-easy.png" alt="" />
 					<h3>Setup is easy</h3>
-					<p>Connect your salesforce organization to Datacol, choose objects to sync and point your database to connect to. Hit “Start syncing” and you’re good to go!
-.</p>
-				</section>
+					<p>Connect your salesforce organization to Datacol, choose objects to sync and point your database to connect to. Hit “Start syncing” and you’re good to go! .</p>
+				</div>
 			</div>
-			<div class="4u">
-				<section class="special box">
-					<i class="icon fa-refresh major"></i>
+			<div class="col-md-4 col-sm-6">
+				<div class="step-item">
+					<img src="/datacol/images/configure.png" alt="" />
 					<h3>Configure as you like</h3>
 					<p>  If you need more control, you can change columns, sync frequency, set filters to only sync subset of objects. You can also pause or stop the sync at any time.</p>
-				</section>
+				</div>
 			</div>
-			<div class="4u">
-				<section class="special box">
-					<i class="icon fa-cog major"></i>
+			<div class="col-md-4 col-sm-6">
+				<div class="step-item">
+					<img src="/datacol/images/finish.png" alt="" />
 					<h3>That's it</h3>
 					<p>  Just relax and let our software do what it does best: seamless two-way syncing. Let us worry about your data. There is no need to intervene, though you can always check the dashboard to see how many objects DataCol added or updated for you.</p>
-				</section>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
 
-
     <!-- Footer -->
-<footer id="footer">
-    <div class="container">
-        <div class="row double">
-            <div class="6u">
-                <div class="row collapse-at-2">
-                    <div class="6u">
-                        <h3>Accumsan</h3>
-                        <ul class="alt">
-                            <li><a href="#">Nascetur nunc varius</a></li>
-                            <li><a href="#">Vis faucibus sed tempor</a></li>
-                            <li><a href="#">Massa amet lobortis vel</a></li>
-                            <li><a href="#">Nascetur nunc varius</a></li>
-                        </ul>
-                    </div>
-                    <div class="6u">
-                        <h3>Faucibus</h3>
-                        <ul class="alt">
-                            <li><a href="#">Nascetur nunc varius</a></li>
-                            <li><a href="#">Vis faucibus sed tempor</a></li>
-                            <li><a href="#">Massa amet lobortis vel</a></li>
-                            <li><a href="#">Nascetur nunc varius</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="6u">
-                <h2>DataCol</h2>
-                <p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
-                <ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <ul class="copyright">
-            <li>&copy; Datacol. All rights reserved.</li>
-        </ul>
-    </div>
+<footer class="footer">
+  <div class="container">
+    <p class="copyright">
+      &copy; Datacol. All rights reserved.
+    </p>
+    <ul class="footer-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <ul class="social-icons">
+      <li><a href="#" class="icon icon-facebook"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#" class="icon icon-twitter"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#" class="icon icon-instagram"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#" class="icon icon-google"><i class="fa fa-google"></i></a></li>
+      <li><a href="#" class="icon icon-linkedin"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+  </div>
 </footer>
 
 
