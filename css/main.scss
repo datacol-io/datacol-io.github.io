@@ -1,9 +1,16 @@
-/*----------overrides-----*/
+---
+---
+
+$btn-color: #49B882;
+$btn-hover-color: #54D194; 
+
 body {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  /*font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;*/
+  font-family: 'Montserrat', serif;
   padding-top: 60px;
   font-size: 15px;
 }
+
 .btn-big {
   display: block;
   padding: 14px 15px;
@@ -11,6 +18,21 @@ body {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s;
+  border: 1px solid;
+}
+
+.btn.bg-green {
+  background: $btn-color;
+  color: #fff;
+  &:hover {
+    background: $btn-hover-color;
+  }
 }
 .btn-yellow {
   background-color: #f6b036;
@@ -24,6 +46,7 @@ body {
 .bg-gray {
   background-color: #fafafa;
 }
+
 .main-content {
   min-height: 78vh;
 }
@@ -47,7 +70,7 @@ body {
   height: 45px;
 }
 .navbar-default .navbar-nav .freetrail-btn > a {
-  background-color: #31c685;
+  background-color: $btn-color;
   color: #fff;
   padding: 8px 12px;
   margin-top: 8px;
@@ -55,7 +78,7 @@ body {
 }
 .navbar-default .navbar-nav .freetrail-btn > a:hover,
 .navbar-default .navbar-nav .freetrail-btn > a:focus {
-  background-color: #31c685;
+  background-color: $btn-hover-color;
   color: #fff;
 }
 /*--------Footer----------*/
@@ -133,8 +156,9 @@ body {
 /*-----------Banner---------*/
 .banner {
   min-height: 600px;
-  padding: 6em 0;
-  background: linear-gradient(#7532c7,#32c7c2);
+  padding: 3em 0;
+  /*background: linear-gradient(#7532c7,#32c7c2);*/
+  background: #888;
 	position: relative;
 }
 .banner-message {
@@ -154,64 +178,42 @@ body {
   font-size: 18px;
   color: #fff;
 }
-.banner-actions {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  width: 100%;
-  margin: 15px auto;
+.banner-actions > div {
+  width: 300px;
+  text-align: center;
+  margin: auto;
 }
-.banner-actions > li {
-  display: block;
-  width: 50%;
-  float: left;
-  padding: 15px;
+
+.cta-wrapper {
+  padding: 60px 0;
 }
-/*---------Features--------*/
-.feature-item {
-  padding: 50px 0;
+
+.cta-wrapper.gray {
+  padding: 60px 0px;
+  background-color: #e8e8e8;
 }
-.feature-item-image,
-.feature-item-content {
-  width: 50%;
-  float: left;
+
+.features {
+  margin: 6% 15%;
+ .item {
+    padding: 20px;
+    > div {
+      text-align: center;
+      margin: 5px;
+      color: #31c685;
+    }
+
+    > h4 {
+      text-align: center;
+      margin: 20px;
+      color: #31c685;
+    }
+  }
 }
-.feature-item-image.right-side {
-  float: right;
-}
-.feature-item-image img {
-  max-width: 100%;
-  height: auto;
-}
-.feature-item-content {
-  padding: 15px;
-}
-.feature-item-content h4 {
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
-}
-.feature-points {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-.feature-points > li {
-  display: block;
-  position: relative;
-  padding: 5px 0 0 18px;
-}
-.feature-points > li::before {
-  content: "\f058";
-  font: normal normal normal 14px/1 FontAwesome;
-  position: absolute;
-  color: #31c685;
-  top: 8px;
-  left: 0;
-}
+
 /*--------how it works-------*/
 .how-it-works {
-  background-color: #f6f6f6;
+  background-color: #fff;
   padding: 50px 0;
 }
 .section-header {
@@ -220,8 +222,11 @@ body {
 }
 .step-item {
   text-align: center;
-  padding: 15px;
+  padding: 30px;
   margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 400px;
 }
 
 @media (max-width: 991px) {
@@ -277,7 +282,6 @@ body {
 .plan-head {
   padding: 15px;
   background-color: #fff;
-  color: #f6b036;
   text-align: center;
   border-bottom: 1px solid #ddd;
   background-color: #f6f6f6;
@@ -325,3 +329,8 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.contact-wraper .response {
+  margin-top: 20px;
+}
+

@@ -6,8 +6,12 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
   <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
   <script src="/datacol/js/jquery.min.js"></script>
+  <script src="/datacol/js/app.js"></script>
   <link rel="stylesheet" href="/datacol/css/bootstrap.css" />
   <link rel="stylesheet" href="/datacol/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/datacol/css/fonts.css" />
@@ -25,14 +29,15 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
-     <a class="navbar-brand" href="/datacol/"><img src="/datacol/images/logo.png" alt="" /></a>
+     <a class="navbar-brand" href="/datacol/">
+      <img src="/datacol/images/mini/logo.svg" alt="" />
+     </a>
    </div>
    <div id="navbar" class="collapse navbar-collapse">
      <ul class="nav navbar-nav navbar-right">
         <li><a href="/datacol/">How it works</a></li>
-        <li><a href="/datacol/pricing.html">Pricing</a></li>
-        <li><a href="/datacol/right-sidebar.html">Developers</a></li>
-        <li class="freetrail-btn"><a href="#">Free Trial</a></li>
+        <li><a href="/datacol/pricing">Pricing</a></li>
+        <li class="freetrail-btn"><a href="#">Try Datacol</a></li>
      </ul>
    </div><!--/.nav-collapse -->
  </div>
@@ -43,80 +48,75 @@
     <section class="banner">
       <div class="banner-message">
         <div class="container">
-          <h2>Connect your salesforce to <br> data systems seemlessly</h2>
-          <h6>Datacol is the easiest way to connect salesforce to your back-office data system.</h6>
-          <p class="banner-flow-image"> <img src="/datacol/images/flow1.png" /> </p>
-          <ul class="banner-actions">
-            <li><a href="#content" class="btn btn-big btn-yellow">Get Start</a></li>
-            <li><a href="#elements" class="btn btn-default btn-big">Learn More</a></li>
-          </ul>
+          <h2>Connect salesforce to <br> data systems seemlessly</h2>
+          <h6>Datacol is the easiest way to connect salesforce to your back-office data system and warehourse.</h6>
+          <p class="banner-flow-image"> <img src="/datacol/images/flow2.png" /> </p>
+
+          <div class='banner-actions'>
+            <div>
+              <a href="/datacol/contact" class="btn btn-big bg-green">Request Demo</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="features-wraper">
-	<div class="feature-item">
-		<div class="container">
-			<div class="feature-item-image">
-				<img src="/datacol/images/realtime-synchronization.jpg" alt="" />
-			</div>
-			<div class="feature-item-content">
-				<h4>Realtime Syncronization</h4>
-				<ul class="feature-points">
-					<li>Bi-directional</li>
-				  <li>Supports custom objects and fields, including long text and attachments.</li>
-				  <li>Full recovery lost or corrupted to any point in time</li>
-				</ul>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-				</p>
-			</div>
+    <section class="features">
+	<h3 class='text-center'> Core Features </h3>
+	<div class="row">
+		<div class="item col-md-6">
+			<div> <img src="/datacol/images/mini/refresh.svg" /></div>
+			<h4> Realtime </h4>
+			<p> We support bi-direction, always up-to-date changes with your data system. No coding required. </p>
+		</div>
+
+		<div class="item col-md-6">
+			<div> <img src="/datacol/images/mini/settings.svg" /></div>
+			<h4> Configurable </h4>
+			<p>  Sync salesforce Custom Objects and fields (including long text and attachments) with powerful interface to change schema structure within Datacol </p>
 		</div>
 	</div>
 
-	<div class="feature-item bg-gray">
-		<div class="container">
-			<div class="feature-item-image right-side">
-				<img src="/datacol/images/realtime-synchronization.jpg" alt="" />
-			</div>
-			<div class="feature-item-content">
-				<h4>Management Console</h4>
-				<ul class="feature-points">
-					<li>No Coding required</li>
-				  <li>Point & click configuration</li>
-				  <li>Operation logs history</li>
-				</ul>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-				</p>
-			</div>
+	<div class="row">
+		<div class="item col-md-6">
+			<div> <img src="/datacol/images/mini/network.svg" /></div>
+			<h4> Integrations </h4>
+			<p>  
+				We can connect to all major databases and warehourse systems (AWS RDS, inhouse postgres, mysql). We can also host for you if you have any.
+ 			</p>
 		</div>
-	</div>
 
-	<div class="feature-item">
-		<div class="container">
-			<div class="feature-item-image">
-				<img src="/datacol/images/realtime-synchronization.jpg" alt="" />
-			</div>
-			<div class="feature-item-content">
-				<h4>Advance Integration tools</h4>
-				<ul class="feature-points">
-					<li>Sandbox, Test mode supported</li>
-				  <li>Automate, schedule and reuse operations</li>
-				  <li>Automatic schema change detection</li>
-					<li>Historical data refill</li>
-					<li>Force.com API optimization</li>
-				</ul>
-			</div>
+		<div class="item col-md-6">
+			<div> <img src="/datacol/images/mini/stats.svg" /></div>
+			<h4> Console UI  </h4>
+			<p> 
+				Beautiful interface to resolve data inconsistency, watching logs, replay data changes and many more. 
+  		</p>
 		</div>
 	</div>
+</section>
+
+<section class="cta-wrapper gray">
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-12">
+              <h2>All your data integrated in minutes.</h2>
+              <p>Free trial for 2 months. No credit card required.</p>
+
+              <br>
+              <a class="btn btn-lg bg-green" href="/datacol/contact">
+                  Request A Demo
+              </a>
+          </div>
+      </div>
+  </div>
 </section>
 
 <!-- One -->
 <section class="how-it-works">
 	<div class="pricing-header">
-		<h2>How it works</h2>
-		<p>Get start in 3 simple steps</p>
+		<h2>How it Works</h2>
+		<p>Connect saelsforce to your database in minutes.</p>
 	</div>
 	<br>
 	<br>
@@ -133,14 +133,15 @@
 				<div class="step-item">
 					<img src="/datacol/images/configure.png" alt="" />
 					<h3>Configure as you like</h3>
-					<p>  If you need more control, you can change columns, sync frequency, set filters to only sync subset of objects. You can also pause or stop the sync at any time.</p>
+					<p> If you need more control, you can change columns, sync frequency, set filters to only sync subset of objects. You can also pause or stop the sync at any time.</p>
 				</div>
 			</div>
+			
 			<div class="col-md-4 col-sm-6">
 				<div class="step-item">
 					<img src="/datacol/images/finish.png" alt="" />
 					<h3>That's it</h3>
-					<p>  Just relax and let our software do what it does best: seamless two-way syncing. Let us worry about your data. There is no need to intervene, though you can always check the dashboard to see how many objects DataCol added or updated for you.</p>
+					<p> Just relax and let our software do what it does best: seamless two-way syncing. Let us worry about your data. There is no need to intervene, though you can always check the dashboard to see how many objects DataCol added or updated for you.</p>
 				</div>
 			</div>
 		</div>
@@ -151,23 +152,25 @@
     <!-- Footer -->
 <footer class="footer">
   <div class="container">
+    <div class="col-md-6">
+      <ul class="footer-nav pull-left">
+        <li><a href="/datacol">Home</a></li>
+        <li><a href="/datacol/pricing">Pricing</a></li>
+        <li><a href="/datacol/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <ul class="social-icons pull-right">
+        <li><a href="#" class="icon icon-facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="icon icon-twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="icon icon-linkedin"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+
     <p class="copyright">
       &copy; Datacol. All rights reserved.
     </p>
-    <ul class="footer-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="/datacol/contact.html">Contact</a></li>
-      <li><a href="#">Terms of Service</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-    <ul class="social-icons">
-      <li><a href="#" class="icon icon-facebook"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="#" class="icon icon-twitter"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="#" class="icon icon-instagram"><i class="fa fa-instagram"></i></a></li>
-      <li><a href="#" class="icon icon-google"><i class="fa fa-google"></i></a></li>
-      <li><a href="#" class="icon icon-linkedin"><i class="fa fa-linkedin"></i></a></li>
-    </ul>
   </div>
 </footer>
 

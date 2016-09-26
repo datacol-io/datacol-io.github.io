@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="179px" height="41px" viewBox="0 0 179 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="138" y="0" width="43" height="24" rx="12"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="43" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-2.000000, 0.000000)">
+            <text id="DATACol" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="30" font-weight="normal" fill="#31C685">
+                <tspan x="0" y="40">DATACol</tspan>
+            </text>
+            <text id="BETA" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="10" font-weight="normal" fill="#9B9B9B">
+                <tspan x="146" y="15">BETA</tspan>
+            </text>
+            <use id="Rectangle-1" stroke="#979797" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

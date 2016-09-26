@@ -115,10 +115,33 @@
 		}
 	});
 
+	var contactForm = function(form){
+		var formurl = 'http://getsimpleform.com/messages/ajax?form_api_token=88ed0c44bcf06188fac43ee443f49fa2';
+
+		$(selector).on('submit', function(e){
+		  e.preventDefault();
+	    var submitBtn = $(this).find("input[type='submit']");
+	    var formData = $(this).serialize();
+	    
+	    submitBtn.addClass('sending');
+
+	    $.ajax({
+	      dataType: 'jsonp',
+	      url: formUrl,
+	      data: formData
+	    }).done(function() {
+	      setTimeout(function(){
+	          submitBtn.removeClass('sending').addClass('success');
+	        }, 600);
+	    });
+
+	  });
+
+	};
+
 	$(function() {
-		
-		// jQuery ready stuff.
-		
-	});
+		contactForm('#contact');
+		console.log("her");
+	})();
 
 })(jQuery);

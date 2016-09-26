@@ -10,16 +10,25 @@ subscribe to receive update and join our beta list.
 
 FEATURES
 
-Realtime Syncronization
-  [IMAGE]
-  - Bi-directional
-  - Supports custom objects and fields, including long text and attachments.
-  - Full recovery lost or corrupted to any point in time
+Realtime
+  We support bi-direction, always up-to-date changes with your data system. 
+
+Data
+  Supports salesforce Custom Objects and fields (including long text and attachments) with powerful interface to change schema structure within Datacol
+
+Integration
+  Full recovery lost or corrupted to any point in time
+  historial data
+
+Console UI
+  beautiful interface to resolve data inconsistency, watching logs and many more. 
+
+Point & click configuration / Beautiful UI
+Logs
 
 Management Console
   [IMAGE]
   No Coding required
-  Point & click configuration
   Operation logs history
 
 Advance Integration tools
@@ -72,3 +81,4 @@ https://www.flydata.com/
 https://skyvia.com/data-integration/replication
 https://dribbble.com/shots/2071614-Pricing-plans
 https://dribbble.com/shots/1766161-Home-Renovations/attachments/287933
+http://www.confluent.io/
