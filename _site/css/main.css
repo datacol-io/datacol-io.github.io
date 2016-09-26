@@ -1,5 +1,4 @@
 body {
-  /*font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;*/
   font-family: 'Montserrat', serif;
   padding-top: 60px;
   font-size: 15px; }
@@ -19,10 +18,10 @@ body {
   border: 1px solid; }
 
 .btn.bg-green {
-  background: #49B882;
+  background: #239cca;
   color: #fff; }
   .btn.bg-green:hover {
-    background: #54D194; }
+    background: #41b3df; }
 
 .btn-yellow {
   background-color: #f6b036;
@@ -59,7 +58,7 @@ body {
   height: 45px; }
 
 .navbar-default .navbar-nav .freetrail-btn > a {
-  background-color: #49B882;
+  background-color: #239cca;
   color: #fff;
   padding: 8px 12px;
   margin-top: 8px;
@@ -67,7 +66,7 @@ body {
 
 .navbar-default .navbar-nav .freetrail-btn > a:hover,
 .navbar-default .navbar-nav .freetrail-btn > a:focus {
-  background-color: #54D194;
+  background-color: #41b3df;
   color: #fff; }
 
 /*--------Footer----------*/
@@ -147,7 +146,7 @@ body {
   min-height: 600px;
   padding: 3em 0;
   /*background: linear-gradient(#7532c7,#32c7c2);*/
-  background: #888;
+  background: linear-gradient(#25a7d9, #23C3B3);
   position: relative; }
 
 .banner-message {
@@ -156,8 +155,8 @@ body {
 
 .banner-message h2 {
   color: #fff;
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 50px;
+  line-height: 76px;
   font-weight: 700; }
 
 .banner-flow-image {
@@ -190,7 +189,7 @@ body {
     .features .item > h4 {
       text-align: center;
       margin: 20px;
-      color: #31c685; }
+      color: #239cca; }
 
 /*--------how it works-------*/
 .how-it-works {

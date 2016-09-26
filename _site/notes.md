@@ -82,3 +82,7 @@ https://skyvia.com/data-integration/replication
 https://dribbble.com/shots/2071614-Pricing-plans
 https://dribbble.com/shots/1766161-Home-Renovations/attachments/287933
 http://www.confluent.io/
+
+https://www.linkedin.com/in/tejasmanohar
+
+Software engineer and technical leader with 5+ years of experience in various platforms and technologies. Focused on startups that provide enhanced methods for existing tasks.

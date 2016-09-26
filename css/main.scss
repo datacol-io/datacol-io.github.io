@@ -1,11 +1,13 @@
 ---
 ---
 
-$btn-color: #49B882;
-$btn-hover-color: #54D194; 
+$blue-color: #239cca;
+$blue-hover-color: #41b3df;
+
+$btn-color: $blue-color;
+$btn-hover-color: $blue-hover-color; 
 
 body {
-  /*font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;*/
   font-family: 'Montserrat', serif;
   padding-top: 60px;
   font-size: 15px;
@@ -158,7 +160,8 @@ body {
   min-height: 600px;
   padding: 3em 0;
   /*background: linear-gradient(#7532c7,#32c7c2);*/
-  background: #888;
+  // background: #888;
+  background: linear-gradient(#25a7d9,#23C3B3);
 	position: relative;
 }
 .banner-message {
@@ -167,8 +170,8 @@ body {
 }
 .banner-message h2 {
   color: #fff;
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 50px;
+  line-height: 76px;
   font-weight: 700;
 }
 .banner-flow-image {
@@ -206,7 +209,7 @@ body {
     > h4 {
       text-align: center;
       margin: 20px;
-      color: #31c685;
+      color: $blue-color;
     }
   }
 }
