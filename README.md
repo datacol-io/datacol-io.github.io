@@ -5,4 +5,4 @@ Usage
     $ gem install jekyll
     $ jekyll serve
 
-Open `http://localhost:4000/datacol` in browser
+Open `http://localhost:4000` in browser
