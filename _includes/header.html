@@ -34,8 +34,8 @@
         <p> To get start you need to connect Datacol to your salesforce. We recommend you to first test out integration with sandbox environment. </p>
 
         {% if site.github.environment == 'dotcom' %}
-          {% assign sandbox_url = 'http://app.datacol.io/auth/salesforcesandbox' %}
-          {% assign live_url = 'http://app.datacol.io/auth/salesforce' %}
+          {% assign sandbox_url = 'https://app.datacol.io/auth/salesforcesandbox' %}
+          {% assign live_url = 'https://app.datacol.io/auth/salesforce' %}
         {% else %}
           {% assign sandbox_url = 'http://localhost:3000/auth/salesforcesandbox' %}
           {% assign live_url = 'http://localhost:3000/auth/salesforce' %}

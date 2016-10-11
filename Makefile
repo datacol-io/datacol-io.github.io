@@ -3,4 +3,4 @@ deploy:
 
 # force push and deploy
 deploy_f:
-	make deploy -f
+	git push git@github.com:codecrux/datacol.git -f
