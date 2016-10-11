@@ -1,5 +1,20 @@
 
 (function($) {
+  var scrollNav = function() {
+    $('a.scroll-nav').click(function(){  
+      $(".active").removeClass("active");      
+      $(this).closest('li').addClass("active");
+      var theClass = $(this).attr("class");
+      $('.'+theClass).parent('li').addClass('active');
+      
+      //Animate
+      $('html, body').stop().animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 160
+      }, 400);
+      return false;
+    });
+  };
+
   var contactForm = function(selector){
     var formUrl = 'http://getsimpleform.com/messages/ajax?form_api_token=88ed0c44bcf06188fac43ee443f49fa2';
     var form = $(selector);
@@ -30,6 +45,7 @@
 
   $(function() {
     contactForm('#contact');
+    scrollNav();
   });
 
 })(jQuery);
