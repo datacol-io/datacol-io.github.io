@@ -31,7 +31,7 @@
       </div>
 
       <div class="modal-body">
-        <p> To get start you need to connect Datacol to your salesforce. We recommend you to first test out integration with sandbox environment. </p>
+        <p> To get start you need to connect Datacol to your salesforce. We recommend you to first test out integration with sandbox environment. {{ site.github.environment}} </p>
 
         {% if site.github.environment == 'dotcom' %}
           {% assign sandbox_url = 'http://app.datacol.io/auth/salesforcesandbox' %}
