@@ -24,18 +24,18 @@
     };
 
     $(document).on('ready', function(){
-      var mx_user_id = mixpanel.get.distinct_id();
-      $('.callback').find('.btn').each(function(){
-        var element = $(this), 
-          href = element.attr('href'); params = getUrlVars(href),
-          newhref;
+      analytics.ready(function(){
+        var mx_user_id = mixpanel.get_distinct_id();
+        $('.callback').find('.btn').each(function(){
+          var element = $(this), href = element.attr('href'), params = getUrlVars(href), newhref;
 
-        if(params['mx_user_id'] != undefined){
-          var delimiter = params.length == 0 ? '?' : '&';
-          newhref = href + delimiter + "mx_user_id=" + mx_user_id;
-          element.prop('href', newhref);
-        };
-      })
+          if(params['mx_user_id'] == undefined){
+            var delimiter = params.length == 0 ? '?' : '&';
+            newhref = href + delimiter + "mx_user_id=" + mx_user_id;
+            element.prop('href', newhref);
+          };
+        });
+      });
     });
   </script>
 {% endif %}
