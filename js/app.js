@@ -38,14 +38,22 @@
             form.append(thank_you);
           }, 600);
       });
-
     });
+  };
 
+  var initTracking = function(){
+    if(window.analytics){
+      analytics.ready(function(){
+        analytics.trackLink($('.banner-actions a.bg-green'), 'Request Demo clicked');
+        analytics.trackLink($('.freetrail-btn a'), 'Try clicked');
+      });
+    }
   };
 
   $(function() {
     contactForm('#contact');
     scrollNav();
+    initTracking();
   });
 
 })(jQuery);
