@@ -5,7 +5,7 @@ $blue-color: #239cca;
 $blue-hover-color: #41b3df;
 
 $btn-color: $blue-color;
-$btn-hover-color: $blue-hover-color; 
+$btn-hover-color: $blue-hover-color;
 
 body {
   font-family: 'Montserrat', serif;
@@ -50,7 +50,7 @@ body {
 }
 
 .main-content {
-  min-height: 78vh;
+  min-height: 84vh;
 }
 .form-control {
   padding: 12px;
@@ -89,6 +89,7 @@ body {
   border-top: 1px solid #ddd;
 }
 .footer-nav {
+  display: inline-block;
   list-style: none;
   padding: 0;
   margin: 10px 0;
@@ -110,8 +111,24 @@ body {
   outline: 0;
 }
 .copyright {
+  display: inline-block;
   text-align: center;
-  margin: 15px 0;
+  margin: 15px 20px 0 0;
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .copyright {
+    display: block;
+    text-align: center;
+  }
+  .footer-nav {
+    display: block;
+    text-align: center;
+  }
+  .social-icons {
+    float: none !important;
+    text-align: center;
+  }
 }
 .social-icons {
   list-style: none;
@@ -177,9 +194,28 @@ body {
 .banner-flow-image {
   margin: 40px 0;
 }
+.banner-flow-image img {
+  max-width: 100%;
+  height: auto;
+}
 .banner-message h6 {
   font-size: 18px;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .banner-flow-image {
+    display: none;
+  }
+  .banner-actions {
+    margin-top: 20px;
+  }
+  .banner-message h2 {
+    font-size: 34px;
+    line-height: inherit;
+  }
+  .banner-message h6 {
+    font-weight: 400;
+  }
 }
 .banner-actions > div {
   width: 300px;
@@ -193,7 +229,7 @@ body {
 
 .cta-wrapper.gray {
   padding: 60px 0px;
-  background-color: #e8e8e8;
+  background-color: #f7f8fa;
 }
 
 .features {
@@ -335,4 +371,19 @@ body {
 .contact-wraper .response {
   margin-top: 20px;
 }
-
+.feature-item {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.feature-item ul {
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .plan-item {
+    max-width: 350px;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+}
