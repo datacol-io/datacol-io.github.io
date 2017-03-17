@@ -3,9 +3,9 @@
 
 $blue-color: #239cca;
 $blue-hover-color: #41b3df;
-
-$btn-color: $blue-color;
-$btn-hover-color: $blue-hover-color;
+$primary-color: #2fcea0;
+$btn-color: #2fcea0;
+$btn-hover-color: #57d9b3;
 
 body {
   font-family: 'Montserrat', serif;
@@ -60,13 +60,33 @@ body {
   box-shadow: none;
   border-color: #ccc;
 }
+.section-header {
+  position: relative;
+  font-size: 28px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  background-color: $primary-color;
+}
+.section {
+  padding: 40px 0;
+}
 /*--------navigation---------*/
 .navbar-default {
   background-color: #fff;
   min-height: 60px;
 }
 .navbar-brand {
-  padding: 5px 0;
+  padding: 16px 0 15px 0;
+  font-size: 40px;
 }
 .navbar-brand img {
   height: 45px;
@@ -176,18 +196,19 @@ body {
 .banner {
   min-height: 600px;
   padding: 3em 0;
-  /*background: linear-gradient(#7532c7,#32c7c2);*/
-  // background: #888;
-  background: linear-gradient(#25a7d9,#23C3B3);
+  background: url("../images/razorbox-banner.png") no-repeat bottom -20px center/cover;
 	position: relative;
+  border-bottom: 2px solid #f6f8f6;
 }
 .banner-message {
   position: relative;
-  text-align: center;
+  text-align: left;
+  max-width: 700px;
+  margin-top: 40px;
 }
-.banner-message h2 {
-  color: #fff;
-  font-size: 50px;
+.banner-message h1 {
+  color: #000;
+  font-size: 60px;
   line-height: 76px;
   font-weight: 700;
 }
@@ -198,9 +219,16 @@ body {
   max-width: 100%;
   height: auto;
 }
-.banner-message h6 {
+.banner-message p {
   font-size: 18px;
-  color: #fff;
+  color: #222;
+}
+.banner-actions .btn {
+  height: 50px;
+  line-height: 48px;
+  border-radius: 2px;
+  padding: 0 15px;
+  width: 260px;
 }
 @media (max-width: 767px) {
   .banner-flow-image {
@@ -217,11 +245,6 @@ body {
     font-weight: 400;
   }
 }
-.banner-actions > div {
-  width: 300px;
-  text-align: center;
-  margin: auto;
-}
 
 .cta-wrapper {
   padding: 60px 0;
@@ -232,158 +255,89 @@ body {
   background-color: #f7f8fa;
 }
 
-.features {
-  margin: 6% 15%;
- .item {
-    padding: 20px;
-    > div {
-      text-align: center;
-      margin: 5px;
-      color: #31c685;
-    }
-
-    > h4 {
-      text-align: center;
-      margin: 20px;
-      color: $blue-color;
-    }
-  }
+/*------why------*/
+.why-wraper {
+  background-color: #f8f6f8;
 }
-
-/*--------how it works-------*/
-.how-it-works {
+.why-item {
+  padding: 15px;
+  text-align: center;
   background-color: #fff;
-  padding: 50px 0;
-}
-.section-header {
-  text-align: center;
-  margin: 25px 0;
-}
-.step-item {
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 25px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 400px;
-}
-
-@media (max-width: 991px) {
-  .feature-item-image,
-  .feature-item-content {
-    float: none;
-    margin-bottom: 25px;
-  }
-  .feature-item-image.right-side {
-    float: none;
-  }
-}
-/*--------pricing--------*/
-.pricing-header {
-  text-align: center;
-}
-.pricing-header h2 {
-  position: relative;
-  font-size: 40px;
+  margin-top: 60px;
   margin-bottom: 30px;
+  min-height: 240px;
+  box-shadow: 0 0 2px -1px #ddd;
 }
-.pricing-header h2::before {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  width: 200px;
-  margin: 0 auto;
-  height: 2px;
-  background-color: #f6b036;
-}
-.pricing-header p {
-  color: #999;
-  font-size: 19px;
-  line-height: 30px;
-}
-.pricing-wraper {
-  margin: 30px auto;
-}
-.plan-item {
-  width: 350px;
-  float: left;
-  padding: 15px;
-}
-.plan-content {
-  border: 1px solid #f6f6f6;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
-  min-height: 320px;
-  border-radius: 3px;
-}
-.plan-head {
-  padding: 15px;
-  background-color: #fff;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  background-color: #f6f6f6;
-}
-.plan-head h4 {
-  margin: 0;
-  font-weight: 700;
-}
-.plan-amount {
-  text-align: center;
-  font-size: 42px;
-}
-.plan-amount small {
-  font-size: 14px;
-}
-.plan-offers-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.plan-offers-list > li {
+.why-item img {
   display: block;
+  width: 100px;
+  height: 100px;
+  margin: -65px auto 0;
+}
+.why-item p {
+  color: #666;
+}
+/*----how-it-works-----*/
+.step-item {
+  margin-bottom: 15px;
+}
+.step-count {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: $primary-color;
+  border-radius: 50%;
   text-align: center;
-  border-bottom: 1px solid #ddd;
-  padding: 8px;
+  font-size: 24px;
+  float: left;
+  margin-right: 10px;
 }
-.plan-offers-list > li:first-child {
-  border-top: 1px solid #ddd;
+.step-item-msg {
+  overflow: hidden;
+  word-wrap: break-word;
 }
-.plan-footer {
-  padding: 12px 15px;
-}
-.contact-header {
-  background: linear-gradient(#7532c7,#32c7c2);
-  padding: 50px 0;
-}
-.contact-header h2 {
-  text-align: center;
-  margin: 0;
-  color: #fff;
+.step-item-msg h4 {
+  margin-top: 10px;
   font-weight: 700;
-  font-size: 33px;
+  color: #111;
 }
-.contact-wraper {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.contact-wraper .response {
-  margin-top: 20px;
+/*-------features------*/
+.features-wraper {
+  background-color: #f6f8f6;
 }
 .feature-item {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.feature-item::after,
+.feature-item::before {
+  content: '';
+  display: table;
+}
+.feature-item::after {
+  clear: both;
+}
+.feature-item-icon {
+  display: inline-block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
   text-align: center;
-  padding: 20px;
-  margin-bottom: 25px;
+  padding-top: 15px;
 }
-.feature-item ul {
-  text-align: left;
+.feature-item-icon img {
+  width: 50px;
+  height: 50px;
 }
-@media (max-width: 767px) {
-  .plan-item {
-    max-width: 350px;
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-  }
+.feature-item-msg {
+  overflow: hidden;
+  padding-left: 10px;
+}
+.feature-item-msg h4 {
+  font-size: 22px;
 }
