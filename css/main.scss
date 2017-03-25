@@ -20,7 +20,7 @@ $btn-hover-color: #57d9b3;
 
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  padding-top: 60px;
+  // padding-top: 60px;
   font-size: 15px;
 }
 
@@ -254,11 +254,27 @@ body {
   color: #fff;
 }
 .banner-actions .btn {
+  display: inline-block;
   height: 50px;
   line-height: 48px;
   border-radius: 2px;
   padding: 0 15px;
   width: 260px;
+}
+.btn-how-works {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #f6f6f6;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+  line-height: 46px !important;
+}
+.btn-how-works:hover,
+.btn-how-works:focus {
+  background-color: #fff;
+  border-color: #fff;
+  color: #111;
 }
 @media (max-width: 767px) {
   .banner-flow-image {
@@ -429,4 +445,49 @@ body {
   font-size: 22px;
   font-family: 'Source Sans Pro';
   font-weight: 600;
+}
+.signup-wraper {
+  width: 100%;
+  background-color: #41295a;
+  padding: 30px 40px 50px 40px;
+  z-index: 2;
+}
+.signup-wraper .box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.signup-email-wraper::after,
+.signup-email-wraper::before {
+  content: '';
+  display: table;
+}
+.signup-email-wraper::after {
+  clear: both;
+}
+.signup-email-field {
+  overflow: hidden;
+  padding-right: 15px;
+}
+.signup-email-field .form-control {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 15px;
+  border-radius: 2px;
+}
+.signup-email-field .form-control:focus {
+  box-shadow: none;
+  border-color: #f1f1f1;
+}
+.signup-email-wraper .btn-email {
+  font-size: 16px;
+  font-weight: 600;
+  width: 150px;
+  padding: 10px 12px;
+  float: right;
+  border-radius: 2px;
+}
+.signup-wraper h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
