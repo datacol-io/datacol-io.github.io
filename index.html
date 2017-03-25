@@ -10,8 +10,8 @@ layout: landing-page
 				<div class="why-item">
 					<img src="/images/secure.png" alt="" />
 					<h4>Private and Secure</h4>
-					<p>Get isolated and single tenant hosted environment in your GCP account with recommended configuration including Kubernetes. 
-					<br><br>Your data and code will always be inside your account.</p>
+					<p>Get isolated and single tenant hosted environment in your GCP account with recommended configuration including Kubernetes.<p>
+					<p>Your data and code will always be inside your account.</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -37,47 +37,74 @@ layout: landing-page
 <section class="how-it-works-wraper section" id="htw">
 	<div class="container">
 		<h2 class="section-header">How it works</h2>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="step-item">
-					<span class="step-count">1</span>
-					<div class="step-item-msg">
-						<h4>Setup</h4> <hr>
-						<p>Get started by downloading our cli to create a stack. It will spin up a Kubernetes cluster and other resources in your GCP account. </p>
-						<p> You can deploy multiple apps in a cluster and share services among them.</p>
-						<a href=""> Read More </a>
+		<ul class="step-tabs">
+			<li class="active"><a href="#step-1" data-toggle="tab">Setup</a></li>
+			<li><a href="#step-2" data-toggle="tab">Build & Deploy</a></li>
+			<li><a href="#step-3" data-toggle="tab">Manage & Scale</a></li>
+		</ul>
+		<div class="tab-content">
+
+			<div class="tab-pane active" id="step-1">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="step-item">
+							<div class="step-item-msg">
+								<h4>Setup</h4> <hr>
+								<p>Get started by downloading our cli to create a stack. It will spin up a Kubernetes cluster and other resources in your GCP account. </p>
+								<p> You can deploy multiple apps in a cluster and share services among them.</p>
+								<a href=""> Read More </a>
+							</div>
+						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="step-item">
-					<span class="step-count">2</span>
-					<div class="step-item-msg">
-						<h4>Build & Deploy</h4> <hr>
-						<p> Build your apps and deploy them to cluster. You can also - </p>
-						<ul> 
-							<li>Create 12-factor apps with Buildpacks, Dockerfile or docker-compose.yml on Kubernetes.</li>
-    					<li>Provision infrastructure with <a href="https://helm.sh/"> helm charts </a> managed by us.</li>
-	    				<li>Link GCP services easily (like automatic cloud-sql proxy, service-account and many more).</li>
-	    			</ul>
-  					<a href=""> Read More </a>
+			<div class="tab-pane" id="step-2">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="step-item">
+							<div class="step-item-msg">
+								<h4>Build & Deploy</h4> <hr>
+								<p> Build your apps and deploy them to cluster. You can also - </p>
+								<ul class="info-list">
+									<li>Create 12-factor apps with Buildpacks, Dockerfile or docker-compose.yml on Kubernetes.</li>
+									<li>Provision infrastructure with <a href="https://helm.sh/"> helm charts </a> managed by us.</li>
+									<li>Link GCP services easily (like automatic cloud-sql proxy, service-account and many more).</li>
+								</ul>
+								<a href=""> Read More </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+
 					</div>
 				</div>
+			</div>
 
-				<div class="step-item">
-					<span class="step-count">3</span>
-					<div class="step-item-msg">
-						<h4>Manage & Scale</h4> <hr>
-				    <p> We will automatically setup logging, metrics and alerts for your apps to become more productive. </p>
-						<ul>
-							 <li> Configuring Auto scaling </li>
-							 <li> Executing scheduled and one-off tasks </li>
-							 <li> HTTPS/SSL certificates </li>
-						</ul>
-						<a href=""> Read More </a>
+			<div class="tab-pane" id="step-3">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="step-item">
+							<div class="step-item-msg">
+								<h4>Manage & Scale</h4> <hr>
+								<p> We will automatically setup logging, metrics and alerts for your apps to become more productive. </p>
+								<ul class="info-list">
+									<li> Configuring Auto scaling </li>
+									<li> Executing scheduled and one-off tasks </li>
+									<li> HTTPS/SSL certificates </li>
+								</ul>
+								<a href=""> Read More </a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 </section>
 

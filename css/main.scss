@@ -1,6 +1,17 @@
 ---
 ---
-
+@font-face {
+  font-family: 'Moon';
+  src: url('../fonts/Moon Bold.otf');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Moon';
+  src: url('../fonts/Moon Light.otf');
+  font-style: normal;
+  font-weight: 300;
+}
 $blue-color: #239cca;
 $blue-hover-color: #41b3df;
 $primary-color: #2fcea0;
@@ -8,7 +19,7 @@ $btn-color: #2fcea0;
 $btn-hover-color: #57d9b3;
 
 body {
-  font-family: 'Montserrat', serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   padding-top: 60px;
   font-size: 15px;
 }
@@ -66,13 +77,18 @@ body {
   padding-bottom: 10px;
   margin-top: 0;
   margin-bottom: 30px;
+  font-family: 'Fjalla One';
+  font-weight: 700;
+  text-align: center;
 }
 .section-header::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 30px;
+  margin: 0 auto;
   height: 4px;
   background-color: $primary-color;
 }
@@ -200,9 +216,18 @@ body {
 .banner {
   min-height: 600px;
   padding: 3em 0;
-  background: url("../images/razorbox-banner.png") no-repeat bottom -20px center/cover;
+  background: url("../images/datacol-banner.png") no-repeat bottom -20px center/cover;
 	position: relative;
   border-bottom: 2px solid #f6f8f6;
+}
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .banner-message {
   position: relative;
@@ -211,9 +236,10 @@ body {
   margin-top: 40px;
 }
 .banner-message h1 {
-  color: #000;
-  font-size: 60px;
-  line-height: 76px;
+  font-family: 'Fjalla One';
+  color: #fff;
+  font-size: 62px;
+  line-height: 74px;
   font-weight: 700;
 }
 .banner-flow-image {
@@ -224,8 +250,8 @@ body {
   height: auto;
 }
 .banner-message p {
-  font-size: 18px;
-  color: #222;
+  font-size: 19px;
+  color: #fff;
 }
 .banner-actions .btn {
   height: 50px;
@@ -261,7 +287,7 @@ body {
 
 /*------why------*/
 .why-wraper {
-  background-color: #f8f6f8;
+  background-color: #F0F5FA;
 }
 .why-item {
   padding: 15px;
@@ -272,6 +298,11 @@ body {
   min-height: 240px;
   box-shadow: 0 0 2px -1px #ddd;
 }
+.why-item h4 {
+  font-size: 22px;
+  font-family: 'Fjalla One';
+  font-weight: 700;
+}
 .why-item img {
   display: block;
   width: 100px;
@@ -279,9 +310,50 @@ body {
   margin: -65px auto 0;
 }
 .why-item p {
-  color: #666;
+  line-height: 1.5;
+  color: #424c5c;
 }
 /*----how-it-works-----*/
+.step-tabs {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.step-tabs::after,
+.step-tabs::before {
+  content: '';
+  display: table;
+}
+.step-tabs::after {
+  clear: both;
+}
+.step-tabs > li {
+  display: block;
+  width: 33.3333%;
+  float: left;
+}
+.step-tabs > li > a {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  text-align: center;
+  color: #888;
+  text-decoration: none;
+  font-weight: 600;
+  border-right: 1px solid #ddd;
+  text-transform: uppercase;
+}
+.step-tabs > li.active > a {
+  background-color: $primary-color;
+  color: #fff;
+}
+.step-tabs > li:last-child > a {
+  border-right: 0;
+}
 .step-item {
   margin-bottom: 15px;
 }
@@ -300,11 +372,22 @@ body {
 .step-item-msg {
   overflow: hidden;
   word-wrap: break-word;
+  font-size: 16px;
+  color: #424c5c;
 }
 .step-item-msg h4 {
   margin-top: 10px;
   font-weight: 700;
-  color: #111;
+  color: #424c5c;
+  font-family: 'Fjalla One';
+}
+.info-list {
+  list-style: circle;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.info-list li {
+  margin: 10px 0;
 }
 /*-------features------*/
 .features-wraper {
@@ -344,4 +427,6 @@ body {
 }
 .feature-item-msg h4 {
   font-size: 22px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
 }
