@@ -12,6 +12,14 @@
   font-style: normal;
   font-weight: 300;
 }
+@font-face {
+  font-family: "proxima-nova";
+  src: url('/fonts/proxima-nova.otf') format("opentype");
+  src: url('/fonts/proxima-nova.eot') format("embedded-opentype"),
+       url('/fonts/proxima-nova.ttf') format("truetype");
+}
+
+
 $blue-color: #239cca;
 $blue-hover-color: #41b3df;
 $primary-color: #2fcea0;
@@ -19,7 +27,8 @@ $btn-color: #2fcea0;
 $btn-hover-color: #57d9b3;
 
 body {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  // font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: 'proxima-nova', serif;
   // padding-top: 60px;
   font-size: 15px;
 }
@@ -77,7 +86,7 @@ body {
   padding-bottom: 10px;
   margin-top: 0;
   margin-bottom: 30px;
-  font-family: 'Fjalla One';
+  // font-family: 'Fjalla One';
   font-weight: 700;
   text-align: center;
 }
@@ -235,8 +244,8 @@ body {
   max-width: 700px;
   margin-top: 40px;
 }
+
 .banner-message h1 {
-  font-family: 'Fjalla One';
   color: #fff;
   font-size: 62px;
   line-height: 74px;
@@ -259,8 +268,11 @@ body {
   line-height: 48px;
   border-radius: 2px;
   padding: 0 15px;
-  width: 260px;
+  width: 200px;
+  float: left;
+  margin-right: 20px;
 }
+
 .btn-how-works {
   background-color: transparent;
   color: #fff;
@@ -270,12 +282,13 @@ body {
   margin-left: 10px;
   line-height: 46px !important;
 }
-.btn-how-works:hover,
-.btn-how-works:focus {
+.btn-how-works:hover, .btn-how-works:focus {
   background-color: #fff;
   border-color: #fff;
   color: #111;
 }
+
+
 @media (max-width: 767px) {
   .banner-flow-image {
     display: none;
@@ -316,7 +329,7 @@ body {
 }
 .why-item h4 {
   font-size: 22px;
-  font-family: 'Fjalla One';
+  // font-family: 'Fjalla One';
   font-weight: 700;
 }
 .why-item img {
@@ -395,7 +408,7 @@ body {
   margin-top: 10px;
   font-weight: 700;
   color: #424c5c;
-  font-family: 'Fjalla One';
+  // font-family: 'Fjalla One';
 }
 .info-list {
   list-style: circle;
@@ -443,7 +456,7 @@ body {
 }
 .feature-item-msg h4 {
   font-size: 22px;
-  font-family: 'Source Sans Pro';
+  // font-family: 'Source Sans Pro';
   font-weight: 600;
 }
 .signup-wraper {
