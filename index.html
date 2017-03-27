@@ -35,118 +35,6 @@ layout: landing-page
 	</div>
 </section>
 
-<section class="how-it-works-wraper section" id="htw">
-	<div class="container">
-		<h2 class="section-header">How It Works</h2>
-		<ul class="step-tabs">
-			<li class="active"><a href="#step-1" data-toggle="tab">Setup</a></li>
-			<li><a href="#step-2" data-toggle="tab">Build & Deploy</a></li>
-			<li><a href="#step-3" data-toggle="tab">Manage & Scale</a></li>
-		</ul>
-		<div class="tab-content">
-			<div class="tab-pane active" id="step-1">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="step-item">
-							<div class="step-item-msg">
-								<h4>Setup</h4> <hr>
-								<p>Get started by downloading our cli to create a stack. It will spin up a Kubernetes cluster and other resources in your GCP account. </p>
-								<p> You can deploy multiple apps in a cluster and share services among them. </p>
-
-{% highlight shell %}
-curl -Ls https://storage.googleapis.com/datacol-distros/osx > /usr/local/bin/datacol
-{% endhighlight %}
-
-{% highlight shell %}
-datacol init --project gcp-demo
-{% endhighlight %}
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<asciinema-player src="images/mini/setup.json" poster="npt:2:34"
-						 theme="solarized-dark"></asciinema-player>
-				</div>
-				</div>
-			</div>
-
-			<div class="tab-pane" id="step-2">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="step-item">
-							<div class="step-item-msg">
-								<h4>Build & Deploy</h4> <hr>
-								<p> Build your apps and deploy them to cluster. You can - </p>
-								<ul class="info-list">
-									<li>Create 12-factor apps with Buildpacks, Dockerfile or docker-compose.yml on Kubernetes.</li>
-                  <li>Provision infrastructure with <a href="https://helm.sh/"> helm charts </a> managed by us.</li>
-			    				<li>Link GCP services easily (like automatically setting
-			    					<a href="https://cloud.google.com/sql/docs/mysql/connect-container-engine" target="_blank"> cloud-sql proxy </a>, 
-			    					service-account and many more).
-			    				</li>
-								</ul>
-{% highlight shell %}
-datacol apps create # create app
-{% endhighlight %}
-
-{% highlight shell %}
-datacol deploy      # deploy app
-{% endhighlight %}
-
-{% highlight shell %}
-datacol env set API_KEY=secret  # set env vars
-{% endhighlight %}
-
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6">
-						<asciinema-player poster="npt:2:34" src="images/mini/deploy.json"
-										theme="solarized-dark"></asciinema-player>
-					</div>
-				</div>
-			</div>
-
-			<div class="tab-pane" id="step-3">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="step-item">
-							<div class="step-item-msg">
-								<h4>Manage & Scale</h4> <hr>
-								<p> We will automatically setup logging, metrics and alerts for your apps to become more productive. </p>
-								<ul class="info-list">
-									<li> Configuring Auto scaling </li>
-									<li> Executing scheduled and one-off tasks </li>
-									<li> HTTPS/SSL certificates using ACME </li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-{% highlight shell %}
-# install redis as backing service
-helm install stable/redis
-{% endhighlight %}
-
-{% highlight shell %}
-datacol logs -t   # stream logs
-{% endhighlight %}
-
-{% highlight shell %}
-datacol scale --count=3   # scale
-{% endhighlight %}
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</section>
-
 <section class="features-wraper section">
 	<div class="container">
 		<h2 class="section-header">Features</h2>
@@ -203,47 +91,146 @@ datacol scale --count=3   # scale
 	</div>
 </section>
 
-<div class="signup-wraper" id="signup">
-  <div class="box">
-    <h2>We are currently in private beta, subscribe to get access.</h2>
-    <form action="https://tinyletter.com/pushcomputing" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/pushcomputing', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-      <div class="signup-email-wraper">
-        <button type="submit" name="button" class="btn btn-yellow btn-email">subscribe</button>
-        <div class="signup-email-field">
-          <input type="hidden" value="1" name="embed"/>
-          <input type="text" name="email" value="" class="form-control" placeholder="Enter your email">
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
+<section class="how-it-works-wraper section" id="htw">
+	<div class="container">
+		<h2 class="section-header">How It Works</h2>
+		<ul class="step-tabs">
+			<li class="active"><a href="#step-1" data-toggle="tab">Setup</a></li>
+			<li><a href="#step-2" data-toggle="tab">Build & Deploy</a></li>
+			<li><a href="#step-3" data-toggle="tab">Manage & Scale</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="step-1">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="step-item">
+							<div class="step-item-msg">
+								<h4>Setup</h4> <hr>
+								<p>Get started by downloading our cli to create a stack. It will create a Kubernetes cluster and other resources in your GCP account. </p>
+								<p> You can deploy multiple apps in cluster and share services among them. </p>
+
+{% highlight shell %}
+curl -Ls https://storage.googleapis.com/datacol-distros/osx > /usr/local/bin/datacol
+{% endhighlight %}
+
+{% highlight shell %}
+datacol init --project gcp-demo
+{% endhighlight %}
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<asciinema-player src="images/mini/setup.json" poster="npt:2:34"
+						 theme="solarized-dark"></asciinema-player>
+				</div>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="step-2">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="step-item">
+							<div class="step-item-msg">
+								<h4>Build & Deploy</h4> <hr>
+								<p> Build your apps and easily deploy them to cluster. You can - </p>
+								<ul class="info-list">
+									<li>Create 12-factor apps with Buildpacks, Dockerfile or docker-compose.yml on Kubernetes.</li>
+                  <li>Provision infrastructure with <a href="https://helm.sh/"> helm charts </a> managed by us.</li>
+			    				<li>Link GCP services easily (like automatically setting
+			    					<a href="https://cloud.google.com/sql/docs/mysql/connect-container-engine" target="_blank"> cloud-sql proxy </a>, 
+			    					service-account and many more).
+			    				</li>
+								</ul>
+{% highlight shell %}
+datacol apps create # create app
+{% endhighlight %}
+
+{% highlight shell %}
+datacol deploy      # deploy app
+{% endhighlight %}
+
+{% highlight shell %}
+datacol env set API_KEY=secret  # set env vars
+{% endhighlight %}
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<asciinema-player poster="npt:2:34" src="images/mini/deploy.json"
+										theme="solarized-dark"></asciinema-player>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="step-3">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="step-item">
+							<div class="step-item-msg">
+								<h4>Manage & Scale</h4> <hr>
+								<p> We will automatically setup logging, metrics and alerts to become more productive. </p>
+								<ul class="info-list">
+									<li> Configuring Auto scaling </li>
+									<li> Executing scheduled and one-off tasks </li>
+									<li> HTTPS/SSL certificates using ACME </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+{% highlight shell %}
+# install redis as backing service
+datacol helm install stable/redis
+{% endhighlight %}
+
+{% highlight shell %}
+datacol logs -t   # stream logs
+{% endhighlight %}
+
+{% highlight shell %}
+datacol scale --count=3   # scale
+{% endhighlight %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
 
 <div class="modal fade" id="try-modal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" type="button" data-dismiss="modal"> &times; </button>
-        <h4 class="modal-title"> Try {{site.title}} </h4>
+        <h4 class="modal-title"> Get Started </h4>
       </div>
 
       <div class="modal-body">
         <p> 
-          <p> Get started with {{site.title}} is easy. It will take almost 10 minute to go from zero to first successful deployment. </p> 
-          <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a> to get started. </i> </small>
+          <p> Getting started with {{site.title}} is easy. It will take almost 10 minute to go from zero to first successful deployment. </p> 
+          <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a>. Create a new one if you don't have at <a href="https://console.cloud.google.com" target="_blank"> console </a> .</i> </small>
           
           <h4> 1. Download cli </h4>
 
 {% highlight shell %}
 > curl -Ls https://storage.googleapis.com/datacol-distros/osx > /usr/local/bin/datacol
+> chmod a+x /usr/local/bin/datacol
 {% endhighlight %}
 
           <h4> 2. Create a new stack </h4>
           <p> Get project identifier from <a href="https://console.cloud.google.com" target="_blank"> Google Console </a> or create a new one. </p>
 
 {% highlight shell %}
-> datacol init --project gcp-demo --stack demo --zone us-east1-b
+> datacol init --project gcp-demo --stack demo
 {% endhighlight %}
-        <p> It will create a new stack by name <i> demo </i> in <i> us-east1-b</i> zone under <i> gcp-demo </i> project. </p>
+        <p> It will create a new stack by name <i> demo </i> under <i> gcp-demo </i> project. </p>
 
         <h4> 3. Deploy a sample app </h4>
 {% highlight shell %}
@@ -263,9 +250,9 @@ hello World
       </div>
 
       <div class="modal-footer">
-        <button class="btn btn-default" type="button" data-dismiss="modal">
-          Will do later
-        </button>
+        <a class="btn bg-green" data-dismiss="modal" href="https://storage.googleapis.com/datacol-distros/osx" target="_blank">
+          Download cli
+        </a>
       </div>
     </div>
   </div>
