@@ -2,38 +2,7 @@
 layout: landing-page
 ---
 
-<section class="why-wraper section">
-	<div class="container">
-		<h2 class="section-header">Why {{site.title}}</h2>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="why-item">
-					<img src="/images/secure.png" alt="" />
-					<h4>Private and Secure</h4>
-					<p>Get isolated and single tenant hosted environment in your GCP account with recommended configuration including Kubernetes. </p>
-					<br><i> Your data and code will always be inside your account.</i>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="why-item">
-					<img src="/images/powerfull.png" alt="" />
-					<h4>Productive and Powerful</h4>
-					<p>Deploy 12-factor based applications, supercharge your workflow using better developer tools and integrations.</p>
-					<br> <i> Focus on your "Apps" not on "Ops". <br> No more App-engine idiosyncrasies. </i>
-				</div>
-			</div>
 
-			<div class="col-sm-4">
-				<div class="why-item">
-					<img src="/images/optimized.png" alt="" />
-					<h4>Inexpensive & Optimized </h4>
-					<p>{{site.title}} optimizes your environment with best of community knowledge providing tight integration with cloud services.</p>
-					<br> <i> Get lower bills via <a href="https://cloud.google.com/compute/pricing"> sustained discount </a>. </i>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <section class="features-wraper section">
 	<div class="container">
@@ -139,7 +108,7 @@ datacol init --project gcp-demo
 									<li>Create 12-factor apps with Buildpacks, Dockerfile or docker-compose.yml on Kubernetes.</li>
                   <li>Provision infrastructure with <a href="https://helm.sh/"> helm charts </a> managed by us.</li>
 			    				<li>Link GCP services easily (like automatically setting
-			    					<a href="https://cloud.google.com/sql/docs/mysql/connect-container-engine" target="_blank"> cloud-sql proxy </a>, 
+			    					<a href="https://cloud.google.com/sql/docs/mysql/connect-container-engine" target="_blank"> cloud-sql proxy </a>,
 			    					service-account and many more).
 			    				</li>
 								</ul>
@@ -158,7 +127,7 @@ datacol env set API_KEY=secret  # set env vars
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="col-md-6">
 						<asciinema-player poster="npt:2:34" src="images/mini/deploy.json"
 										theme="solarized-dark"></asciinema-player>
@@ -213,10 +182,10 @@ datacol scale --count=3   # scale
       </div>
 
       <div class="modal-body">
-        <p> 
-          <p> Getting started with {{site.title}} is easy. It will take almost 10 minute to go from zero to first successful deployment. </p> 
+        <p>
+          <p> Getting started with {{site.title}} is easy. It will take almost 10 minute to go from zero to first successful deployment. </p>
           <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a>. Create a new one if you don't have at <a href="https://console.cloud.google.com" target="_blank"> console </a> .</i> </small>
-          
+
           <h4> 1. Download cli </h4>
 
 {% highlight shell %}
@@ -240,11 +209,11 @@ datacol scale --count=3   # scale
 > datacol apps create
 > datacol deploy -p 8080
 
-> curl http://<IP>:8080 
+> curl http://<IP>:8080
 hello World
 {% endhighlight %}
 
-          <p> If you face any difficulty, please don't hesitate to reach out or send your suggestions 
+          <p> If you face any difficulty, please don't hesitate to reach out or send your suggestions
           <a href="https://github.com/datacol-io/face/issues" target="_blank"> here </a>.
         </p>
       </div>

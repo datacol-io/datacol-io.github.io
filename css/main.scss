@@ -222,12 +222,26 @@ body {
   color: #fff;
 }
 /*-----------Banner---------*/
+.banner-wraper {
+}
+.banner-wraper::after,
+.banner-wraper::before {
+  content: '';
+  display: table;
+}
+.banner-wraper::after {
+  clear: both;
+}
+.banner-wraper .col-md-6 {
+  padding: 0;
+}
 .banner {
   min-height: 600px;
-  padding: 3em 0;
-  background: url("../images/datacol-banner.png") no-repeat bottom -20px center/cover;
+  // background: url("../images/datacol-banner.png") no-repeat bottom center/cover;
 	position: relative;
   border-bottom: 2px solid #f6f8f6;
+  padding: 5% 0;
+  background-color: #0b2a4c;
 }
 .banner::before {
   content: '';
@@ -239,12 +253,20 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .banner-message {
+  max-width: 600px;
+  margin: 0 auto;
   position: relative;
   text-align: left;
   max-width: 700px;
-  margin-top: 40px;
+  padding: 25px;
 }
-
+@media (max-width: 991px) {
+  .banner {
+    min-height: auto;
+    height: auto;
+    padding: 80px 20px;
+  }
+}
 .banner-message h1 {
   color: #fff;
   font-size: 62px;
@@ -261,6 +283,7 @@ body {
 .banner-message p {
   font-size: 19px;
   color: #fff;
+  margin: 15px 0;
 }
 .banner-actions .btn {
   display: inline-block;
@@ -272,7 +295,20 @@ body {
   float: left;
   margin-right: 20px;
 }
-
+@media (max-width: 600px) {
+  .banner-actions .btn {
+    display: block;
+    width: 240px;
+    margin: 5px auto !important;
+  }
+  .banner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .banner-message {
+    padding: 10px 0;
+  }
+}
 .btn-how-works {
   background-color: transparent;
   color: #fff;
@@ -296,7 +332,7 @@ body {
   .banner-actions {
     margin-top: 20px;
   }
-  .banner-message h2 {
+  .banner-message h1 {
     font-size: 34px;
     line-height: inherit;
   }
@@ -316,27 +352,37 @@ body {
 
 /*------why------*/
 .why-wraper {
-  background-color: #F0F5FA;
+  background-color: #fff;
+  min-height: 600px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+@media (max-width: 600px) {
+  .why-wraper {
+    min-height: auto;
+    height: auto;
+  }
 }
 .why-item {
-  padding: 15px;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  min-height: 240px;
-  box-shadow: 0 0 2px -1px #ddd;
+  margin-bottom: 10px
 }
 .why-item h4 {
   font-size: 22px;
   // font-family: 'Fjalla One';
   font-weight: 700;
 }
+.why-item-txt {
+  overflow: hidden;
+  padding-left: 10px;
+}
 .why-item img {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: -65px auto 0;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  float: left;
 }
 .why-item p {
   line-height: 1.5;
