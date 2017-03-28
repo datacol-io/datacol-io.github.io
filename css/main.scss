@@ -223,6 +223,7 @@ body {
 }
 /*-----------Banner---------*/
 .banner-wraper {
+  position: relative;
 }
 .banner-wraper::after,
 .banner-wraper::before {
@@ -237,24 +238,69 @@ body {
 }
 .banner {
   min-height: 600px;
-  // background: url("../images/datacol-banner.png") no-repeat bottom center/cover;
+  background-color: #0b2a4c;
 	position: relative;
   border-bottom: 2px solid #f6f8f6;
   padding: 5% 0;
-  background-color: #0b2a4c;
 }
-.banner::before {
-  content: '';
+.banner-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 600px;
+  width: 600px;
+  background-image: url("../images/datacol-banner-graphic.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+.top-nav {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  right: 80px;
+  z-index: 1;
 }
+.top-nav a {
+  padding: 15px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  .banner {
+    min-height: auto;
+    height: 500px;
+  }
+  .banner-bg {
+    height: 500px;
+    height: 500px;
+    background-size: contain;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .banner-bg {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-bg {
+    display: none;
+  }
+}
+// .banner::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.1);
+// }
 .banner-message {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
   position: relative;
   text-align: left;
   max-width: 700px;
@@ -272,6 +318,7 @@ body {
   font-size: 62px;
   line-height: 74px;
   font-weight: 700;
+  margin-top: 0;
 }
 .banner-flow-image {
   margin: 40px 0;
@@ -292,7 +339,6 @@ body {
   border-radius: 2px;
   padding: 0 15px;
   width: 200px;
-  float: left;
   margin-right: 20px;
 }
 @media (max-width: 600px) {
@@ -352,27 +398,19 @@ body {
 
 /*------why------*/
 .why-wraper {
-  background-color: #fff;
-  min-height: 600px;
-  max-width: 700px;
   margin: 0 auto;
-  padding: 60px 20px;
-}
-@media (max-width: 600px) {
-  .why-wraper {
-    min-height: auto;
-    height: auto;
-  }
+  padding: 30px 20px;
 }
 .why-item {
   text-align: left;
-  background-color: #fff;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  padding: 10px;
 }
 .why-item h4 {
   font-size: 22px;
   // font-family: 'Fjalla One';
   font-weight: 700;
+  color: #222;
 }
 .why-item-txt {
   overflow: hidden;
