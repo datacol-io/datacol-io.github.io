@@ -2,7 +2,6 @@
 layout: landing-page
 ---
 <section class="why-wraper section">
-	<!-- <h2 class="section-header">Why {{site.title}}</h2> -->
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
@@ -11,6 +10,7 @@ layout: landing-page
 					<div class="why-item-txt">
 						<h4>Private and Secure</h4>
 						<p>Get isolated and single tenant hosted environment in your GCP account with recommended configuration including Kubernetes. </p>
+						<i> Your code and data will be secure inside your account. </i>
 					</div>
 				</div>
 			</div>
@@ -32,7 +32,7 @@ layout: landing-page
 					<div class="why-item-txt">
 						<h4>Inexpensive & Optimized </h4>
 						<p>{{site.title}} optimizes your environment with best of community knowledge providing tight integration with cloud services.</p>
-						<i> Get lower bills via <a href="https://cloud.google.com/compute/pricing" target="_blank"> sustained discount </a>. </i>
+						<i> Get lower bills via <a href="https://cloud.google.com/compute/pricing" target="_blank"> sustained discount</a>. </i>
 					</div>
 				</div>
 			</div>
@@ -52,7 +52,7 @@ layout: landing-page
 					<span class="feature-item-icon"><img src="/images/folder.png" alt="" /></span>
 					<div class="feature-item-msg">
 						<h4>Container native</h4>
-						<p>Use Docker images, containers and language buildpacks out of the box. </p>
+						<p>Use Docker images, containers and language buildpacks out of the box. Push your code and we'll do the rest.</p>
 					</div>
 				</div>
 				<div class="feature-item">
@@ -222,19 +222,18 @@ datacol scale --count=3   # scale
       </div>
 
       <div class="modal-body">
-        <p>
-          <p> Getting started with {{site.title}} is easy. It will take almost 10 minute to go from zero to first successful deployment. </p>
-          <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a>. Create a new one if you don't have at <a href="https://console.cloud.google.com" target="_blank"> console </a> .</i> </small>
+        <p> Getting started with {{site.title}} is easy. It will take almost 10 minute to go from zero to first successful deployment. </p>
+        <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a>. Create a new one if you don't have at <a href="https://console.cloud.google.com" target="_blank"> console </a> .</i> </small>
 
-          <h4> 1. Download cli </h4>
+        <h4> 1. Download cli </h4>
 
 {% highlight shell %}
 > curl -Ls https://storage.googleapis.com/datacol-distros/osx > /usr/local/bin/datacol
-> chmod a+x /usr/local/bin/datacol
+> chmod +x /usr/local/bin/datacol
 {% endhighlight %}
 
-          <h4> 2. Create a new stack </h4>
-          <p> Get project identifier from <a href="https://console.cloud.google.com" target="_blank"> Google Console </a> or create a new one. </p>
+        <h4> 2. Create a new stack </h4>
+        <p> Get project identifier from <a href="https://console.cloud.google.com" target="_blank"> Google Console </a> or create a new one. </p>
 
 {% highlight shell %}
 > datacol init --project gcp-demo --stack demo
@@ -253,9 +252,8 @@ datacol scale --count=3   # scale
 hello World
 {% endhighlight %}
 
-          <p> If you face any difficulty, please don't hesitate to reach out or send your suggestions
-          <a href="https://github.com/datacol-io/face/issues" target="_blank"> here </a>.
-        </p>
+        <p> If you face any difficulty, please don't hesitate to reach out or send your suggestions
+        <a href="https://github.com/datacol-io/face/issues" target="_blank"> here </a>.
       </div>
 
       <div class="modal-footer">
