@@ -1,17 +1,6 @@
 ---
 ---
-@font-face {
-  font-family: 'Moon';
-  src: url('../fonts/Moon Bold.otf');
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Moon';
-  src: url('../fonts/Moon Light.otf');
-  font-style: normal;
-  font-weight: 300;
-}
+
 @font-face {
   font-family: "proxima-nova";
   src: url('/fonts/proxima-nova.otf') format("opentype");
@@ -27,9 +16,7 @@ $btn-color: #2fcea0;
 $btn-hover-color: #57d9b3;
 
 body {
-  // font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-family: 'proxima-nova', serif;
-  // padding-top: 60px;
   font-size: 15px;
 }
 
@@ -543,48 +530,8 @@ body {
   // font-family: 'Source Sans Pro';
   font-weight: 600;
 }
-.signup-wraper {
-  width: 100%;
-  background-color: #41295a;
-  padding: 30px 40px 50px 40px;
-  z-index: 2;
-}
-.signup-wraper .box {
-  max-width: 600px;
-  margin: 0 auto;
-}
-.signup-email-wraper::after,
-.signup-email-wraper::before {
-  content: '';
-  display: table;
-}
-.signup-email-wraper::after {
-  clear: both;
-}
-.signup-email-field {
-  overflow: hidden;
-  padding-right: 15px;
-}
-.signup-email-field .form-control {
-  height: 44px;
-  line-height: 44px;
-  padding: 0 15px;
-  border-radius: 2px;
-}
-.signup-email-field .form-control:focus {
-  box-shadow: none;
-  border-color: #f1f1f1;
-}
-.signup-email-wraper .btn-email {
-  font-size: 16px;
-  font-weight: 600;
-  width: 150px;
-  padding: 10px 12px;
-  float: right;
-  border-radius: 2px;
-}
-.signup-wraper h2 {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 15px;
+
+.contact-header {
+  margin-top: 100px;
+  text-align: center;
 }

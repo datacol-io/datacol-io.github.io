@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="top">
+    {% include header.html %}
+    <div class="main-content" style="margin-top: 100px;">
+      <div class="col-md-3"> {% include sidebar.html %}</div>
+      <div class="col-md-8">
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
