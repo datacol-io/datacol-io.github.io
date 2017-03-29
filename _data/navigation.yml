@@ -1,24 +1,51 @@
 docs:
-  - title: Getting Started
+  - title: Introduction
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
+      - title: "Quick-Start"
+        url: /docs/quick-start
+      - title: "Getting Started"
+        url: /docs/getting-started
 
-  - title: Customization
+  - title: "CLI Reference"
     children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
+      - title: "Stacks"
+        url: "/docs/cli/stacks"
+      - title: "Apps"
+        url: "/docs/cli/apps"
+      - title: "Deployment"
+        url: "/docs/cli/deployment"
+      - title: "Secrets"
+        url: "/docs/cli/secrets"
+      - title: "Logging"
+        url: "/docs/cli/logging"
+      - title: "HTTPS/SSL"
+        url: "/docs/cli/ssl"
+      - title: "Infrastructure Services"
+        url: "/docs/cli/infra-services"
+
+  - title: Infrastructure
+    children:
+      - title: "CloudSQL"
+        url: "/docs/todo"
+      - title: "Pub-Sub"
+        url: "/docs/todo"
+      - title: "Helm charts"
+        url: "/docs/cli/infra-services"
+
+  - title: Operations
+    children:
+      - title: "Architecture"
+        url: "/docs/todo"
+      - title: "Security"
+        url: "/docs/todo"
+      - title: "Support"
+        url: "/docs/todo"
+
+  - title: PAAS Comparision
+    children:
+      - title: "Philosophy"
+        url: /docs/philosophy/
+      - title: "App-Engine"
+        url: /docs/app-engine/
+      - title: "Heroku"
+        url: /docs/todo/
