@@ -2,8 +2,7 @@
 layout: docs
 ---
 
-Quick Start
-==========
+## Quick Start
 
 * You'll need a Google cloud account. Here’s [how to set one up][1].
 

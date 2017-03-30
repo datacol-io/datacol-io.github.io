@@ -8,7 +8,7 @@ Getting started with Datacol is easy. Take following steps to get started -
 
 #### 1. Setup Google Cloud Project
 
-Go to [Google Console][1] and create a new project if you don't have one. Afterwards you need to enable following API from API Manager's Library section -
+Go to [Google Console][1] and create a new project if you don't have one. Afterwards you need to enable following API in API Manager's Library section -
 
 * Google Cloud Resource Manager API
 * Cloud Deployment Manager API
@@ -40,27 +40,8 @@ To create a new stack, you must get [Google cloud][1] project name or identifier
 
 It will create a [Datacol Stack](/docs/cli/stacks#creating-a-stack) in your GCP account with required resources. It will take couple of minutes to complete. Hit `Ctrl-C` if you want to cancel the process. 
 
-```shell
-datacol init -h
-NAME:
-    init - create new stack
-
-USAGE:
-    init [command options] [arguments...]
-
-OPTIONS:
-   --stack value         Name of stack (default: "dev")
-   --project value       GCP project name or id to use
-   --zone value          zone for stack (default: "us-east1-b")
-   --bucket value        GCP storage bucket
-   --nodes value         number of nodes in container cluster (default: 3)
-   --cluster value       name for existing Kubernetes cluster in GCP
-   --machine-type value  name of machine-type to use for cluster (default: "n1-standard-1")
-   --preemptible         use preemptible vm
-```
-
 #### 4. Deploy an sample app
-First we’ll show you how to launch your first app and interact with it. Any application having [`Dockerfile`][2] at root level should be eligible for deployment. If you don't have one, Please follow guidelines for creating Dockerfile on [Docker website][3]. 
+In this step we'll show you how to launch your first app and interact with it. Any application having [`Dockerfile`][2] at root level should be eligible for deployment. If you don't have one, Please follow guidelines for creating Dockerfile on [Docker website][3]. 
 
 Let's start with a sample to get started -
 
@@ -71,7 +52,7 @@ Let's start with a sample to get started -
 To create a new app under demo stack - 
 
     $ STACK=demo datacol apps create
-    $ datacol deploy -p 8080
+    $ datacol deploy
 
 When you first create an app, it might take 3-5 minutes for [LoadBalancer][4] to allocate an IP. Use `--wait` flag if you wait for an IP.
 

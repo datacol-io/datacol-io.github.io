@@ -13,4 +13,6 @@ Datacol deploys your apps on one of the best container orchestration platform - 
 
 [1]: https://heroku.com
 [2]: https://cloud.google.com
-[3]: https://k8s.io
+[3]: https://cloud.google.com/container-engine/
+
+Checkout our [philosophy](/docs/philosophy) and why we are different than existing solutions/products on Google Cloud.

@@ -28,16 +28,23 @@ OPTIONS:
 ```
 A standard Stack will include following resources -
 
-* A [Deployment](https://cloud.google.com/deployment-manager/docs/) by name demo (name of stack as given above)
-* A Service account for the stack by name `dcolctl@<project>.iam.gserviceaccount.com`
+* A [Deployment](https://cloud.google.com/deployment-manager/docs/) by name _demo_ (name of stack as given above)
+* A Service account for the stack by name `dcolctl@<project>.iam.gserviceaccount.com` having roles -
+  
+    * `roles/viewer`
+    * `roles/deploymentmanager.editor`
+    * `roles/storage.admin`
+    * `roles/cloudbuild.builds.editor`
+    * `roles/container.developer`
+
 * A Kubernetes cluster tuned for Datacol
-* A bucket on storage
+* A storage bucket
 
 ### Deleting a Stack
 
-If you want to delete a Stack, you can simply run `datacol destroy` command. It will safely teardown Kubernetes cluster, all of the apps deployed by datacol. 
+If you want to delete a Stack, you can simply run `datacol destroy` command. It will safely teardown Kubernetes cluster and all of the apps deployed by Datacol. 
   
-    datacol destroy
+    STACK=demo datacol destroy
 
 Currently we don't support automatic deletion for following resources -
 
