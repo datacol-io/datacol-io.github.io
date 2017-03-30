@@ -9,7 +9,7 @@ layout: landing-page
 					<img src="/images/secure.png" alt="" />
 					<div class="why-item-txt">
 						<h4>Private and Secure</h4>
-						<p>Get isolated and single tenant hosted environment in your GCP account with recommended configuration including Kubernetes. </p>
+						<p>Get isolated and single tenant hosted environment in your <a href="https://console.cloud.google.com/" target="_blank">GCP account</a> with recommended configuration including <a href="https://cloud.google.com/container-engine/">Kubernetes</a>. </p>
 						<i> Your code and data will be secure inside your account. </i>
 					</div>
 				</div>
@@ -20,7 +20,7 @@ layout: landing-page
 					<img src="/images/powerfull.png" alt="" />
 					<div class="why-item-txt">
 						<h4>Productive and Powerful</h4>
-						<p>Deploy 12-factor based applications, supercharge your workflow using better developer tools and integrations.</p>
+						<p>Deploy <a href="https://12factor.net/" target="_blank"> 12-factor</a> based applications, supercharge your workflow using better developer tools and integrations.</p>
 						<p><i> Focus on your "Apps" not on "Ops". No more App-engine idiosyncrasies. </i></p>
 					</div>
 				</div>
@@ -66,7 +66,7 @@ layout: landing-page
 					<span class="feature-item-icon"><img src="/images/configure-tool.png" alt="" /></span>
 					<div class="feature-item-msg">
 						<h4>CI/CD Support</h4>
-						<p>Use developer friendly cli to configure and manage your apps.</p>
+						<p>Use developer friendly CLI to configure and manage your apps.</p>
 					</div>
 				</div>
 			</div>
@@ -76,15 +76,15 @@ layout: landing-page
 					<span class="feature-item-icon"><img src="/images/productivity-tools.png" alt="" /></span>
 					<div class="feature-item-msg">
 						<h4>Productivity tools</h4>
-						<p>Send notifications to productivity apps like <a href="https://slack.com" target="_blank">slack, </a>
-						<a href="https://github.com" target="_blank"> Github</a> and others.</p>
+						<p>Send notifications to productivity apps like <a href="https://slack.com" target="_blank">Slack, </a>
+						<a href="https://github.com" target="_blank">Github</a> and others.</p>
 					</div>
 				</div>
 				<div class="feature-item">
 					<span class="feature-item-icon"><img src="/images/open-source.png" alt="" /></span>
 					<div class="feature-item-msg">
 						<h4>Open source</h4>
-						<p>{{site.title}} source code is open-sourced at <a href="https://github.com/datacol-io" target="_blank"> Github </a> and open to suggestions and contributions.</p>
+						<p>{{site.title}} source code is open-sourced at <a href="https://github.com/datacol-io" target="_blank">Github</a> and open to suggestions and contributions.</p>
 					</div>
 				</div>
 				<div class="feature-item">
@@ -115,7 +115,7 @@ layout: landing-page
 						<div class="step-item">
 							<div class="step-item-msg">
 								<h4>Setup</h4> <hr>
-								<p>Get started by downloading our cli to create a stack. It will create a Kubernetes cluster and other resources in your GCP account. </p>
+								<p>Get started by downloading our CLI to create a stack. It will create a Kubernetes cluster and other resources in your GCP account. </p>
 								<p> You can deploy multiple apps in cluster and share services among them. </p>
 
 {% highlight shell %}
@@ -222,10 +222,10 @@ datacol scale --count=3   # scale
       </div>
 
       <div class="modal-body">
-        <p> Getting started with {{site.title}} is easy. It will take almost 10 minute to go from zero to first successful deployment. </p>
-        <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a>. Create a new one if you don't have at <a href="https://console.cloud.google.com" target="_blank"> console </a> .</i> </small>
+        <p> Getting started with {{site.title}} is easy. It will take almost 10 minutes to go from zero to first successful deployment. </p>
+        <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a>. Create a new one if you don't have from <a href="https://console.cloud.google.com" target="_blank"> console </a> .</i> </small>
 
-        <h4> 1. Download cli </h4>
+        <h4> 1. Download CLI </h4>
 
 {% highlight shell %}
 > curl -Ls https://storage.googleapis.com/datacol-distros/osx > /usr/local/bin/datacol
@@ -246,7 +246,7 @@ datacol scale --count=3   # scale
 
 > export STACK=demo
 > datacol apps create
-> datacol deploy -p 8080
+> datacol deploy
 
 > curl http://<IP>:8080
 hello World
@@ -258,7 +258,7 @@ hello World
 
       <div class="modal-footer">
         <a class="btn bg-green" data-dismiss="modal" href="https://storage.googleapis.com/datacol-distros/osx" target="_blank">
-          Download cli
+          Download CLI
         </a>
       </div>
     </div>
