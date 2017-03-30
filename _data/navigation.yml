@@ -44,8 +44,8 @@ docs:
   - title: PAAS Comparision
     children:
       - title: "Philosophy"
-        url: /docs/philosophy/
+        url: /docs/philosophy
       - title: "App-Engine"
-        url: /docs/app-engine/
+        url: /docs/app-engine
       - title: "Heroku"
-        url: /docs/todo/
+        url: /docs/todo
