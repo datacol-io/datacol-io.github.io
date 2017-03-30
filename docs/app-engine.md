@@ -20,9 +20,9 @@ It is only reasonable to compare Datacol with App Engine flexible since they off
 | Feature       |     DataCol     |  App Engine Flexible environment |
 | --------------|-----------------|----------------|
 | Deployment units     | [Buildpacks](https://devcenter.heroku.com/articles/buildpacks), [Docker-compose](https://docs.docker.com/compose/), Dockerfile | Dockerfile 
-| Infrastructure Service Automation  | Managed, [Helm](https://helm.sh) | Manual  |
-| Pricing   |  Lower and can use [Sustained discount](https://cloud.google.com/compute/pricing#sustained_use) | Relatively more since managed by Google
-| Security & Encryption   | Native  | manual
+| Infrastructure Service Automation  | Native & Managed, [Helm](https://helm.sh) | Manual  |
+| Pricing   |  Less and can use [Sustained discount](https://cloud.google.com/compute/pricing#sustained_use) | More since managed by Google
+| Security & Encryption   | Native (uses [Google KMS](https://cloud.google.com/kms/))  | Manual
 | [Regional constraints](https://cloud.google.com/appengine/docs/locations)  | All Regions | Not available in Europe
 | Scheduler  | [Kubernetes](http://k8s.io) based on containers | Propitiatory scheduler by Google based on VM
 | Real time sockets/Static IP   | Yes | No 

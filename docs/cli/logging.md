@@ -6,7 +6,7 @@ layout: docs
 
 You can view the streaming logs for a Datacol app using `datacol logs` command -
 
-```
+```bash
 datacol logs -h
 NAME:
     logs -

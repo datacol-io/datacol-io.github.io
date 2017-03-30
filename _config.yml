@@ -1,8 +1,9 @@
 # Site settings
 title: DataCol
 email: dinesh@codecrux.com
-description: > # this means to ignore newlines until "baseurl:"
-  Datacol is the easiest way to connect salesforce to your back-office data system.
+description: >
+  Datacol is the easiest way to deploy container-native applications on Google Cloud.
+keywords: Kubernetes, PaaS, Google Cloud, App engine
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://datacol.io" # the base hostname & protocol for your site
@@ -12,3 +13,5 @@ github_username:  datacol
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM

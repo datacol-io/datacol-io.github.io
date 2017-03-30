@@ -40,8 +40,8 @@ To create a new stack, you must get [Google cloud][1] project name or identifier
 
 It will create a [Datacol Stack](/docs/cli/stacks#creating-a-stack) in your GCP account with required resources. It will take couple of minutes to complete. Hit `Ctrl-C` if you want to cancel the process. 
 
-#### 4. Deploy an sample app
-In this step we'll show you how to launch your first app and interact with it. Any application having [`Dockerfile`][2] at root level should be eligible for deployment. If you don't have one, Please follow guidelines for creating Dockerfile on [Docker website][3]. 
+#### 4. Deploy a sample app
+In this step we'll show you how to launch your first app and interact with it. Any application having [`Dockerfile`][2] at root level should be eligible for deployment. If you don't have one, Please follow guidelines for creating [Dockerfile][2] on [Docker website][3]. 
 
 Let's start with a sample to get started -
 

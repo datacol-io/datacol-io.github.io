@@ -2,7 +2,7 @@
 (function($) {
   var scrollNav = function() {
     $('a.scroll-nav').click(function(){  
-      $(".active").removeClass("active");      
+      $(".active").removeClass("active");
       $(this).closest('li').addClass("active");
       var theClass = $(this).attr("class");
       $('.'+theClass).parent('li').addClass('active');
