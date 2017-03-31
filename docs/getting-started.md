@@ -19,13 +19,13 @@ In this step you will install Datacol Command Line Interface (CLI). You will use
    
 **Install on Mac**
   
-    $ curl -Ls https://storage.googleapis.com/datacol-distros/osx >> datacol
-    $ chmod +x datacol
+    $ curl -Ls https://storage.googleapis.com/datacol-distros/osx.zip > /tmp/osx.zip
+    $ unzip /tmp/osx.zip -d /usr/local/bin
     
 **Install on Linux**
   
-    $ curl -Ls https://storage.googleapis.com/datacol-distros/linux >> datacol
-    $ chmod +x datacol
+    $ curl -Ls https://storage.googleapis.com/datacol-distros/linux.zip > /tmp/linux.zip
+    $ unzip /tmp/linux.zip -d /usr/local/bin
 
 We recommend to move datacol executable in your bin path. Make sure it's installed correctly by running -
 

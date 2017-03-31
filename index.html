@@ -227,8 +227,8 @@ datacol scale --count=3   # scale
         <h4> 1. Download CLI </h4>
 
 {% highlight shell %}
-> curl -Ls https://storage.googleapis.com/datacol-distros/osx > /usr/local/bin/datacol
-> chmod +x /usr/local/bin/datacol
+> curl -Ls https://storage.googleapis.com/datacol-distros/osx.zip > /tmp/osx.zip 
+> unzip /tmp/osx.zip -d /usr/local/bin
 {% endhighlight %}
 
         <h4> 2. Create a new stack </h4>
