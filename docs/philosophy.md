@@ -27,7 +27,9 @@ We at {{site.title}}, believe containers are the foundation of [next generation 
 
 Thanks for reading, Please let us what you think.
 
-Next Steps
+Next Steps -
   
   * [Datacol vs App Engine](/docs/app-engine)
-  * [Datacol vs Heroku](/docs/todo)
+  * [Datacol vs Heroku](/docs/heroku)
+  * [Getting Started](/docs/getting-started) with {{site.title}}
+

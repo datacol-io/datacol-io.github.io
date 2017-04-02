@@ -6,8 +6,7 @@ layout: docs
 
 A Stack is a private PaaS installed into your Google Cloud account. Once you have a Stack running you can use it to deploy and manage your applications and backing resources. You can create a stack from our [CLI](/docs/getting-started).
 
-
-```bash
+```
 datacol init -h
 NAME:
     init - create new stack
@@ -46,8 +45,8 @@ If you want to delete a Stack, you can simply run `datacol destroy` command. It 
 
     STACK=demo datacol destroy
 
-Currently we don't support automatic deletion for following resources -
+Currently we don't support automatic deletion for following resources from [console](https://console.cloud.google.com/) -
 
-- **Service Account**: Go to your Google Cloud console and remove service account by name `dtctl@<project>.iam.gserviceaccount.com`.
-- **Docker images** created by datacol cli.
+- **Service Account**: Go to your Google Cloud console and remove service account by name `dcolctl@<project>.iam.gserviceaccount.com`.
+- **Docker images** created by datacol cli. You can purge `artifacts.<project>.appspot.com` storage bucket.
 
