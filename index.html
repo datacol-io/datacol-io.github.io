@@ -121,7 +121,9 @@ layout: landing-page
 								<p> You can deploy multiple apps in cluster and share services among them. </p>
 
 {% highlight shell %}
-curl -Ls https://storage.googleapis.com/datacol-distros/osx > /usr/local/bin/datacol
+curl -Ls https://storage.googleapis.com/datacol-distros/osx.zip > /tmp/osx.zip 
+unzip /tmp/osx.zip -d /usr/local/bin
+
 {% endhighlight %}
 
 {% highlight shell %}

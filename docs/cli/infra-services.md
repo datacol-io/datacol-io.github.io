@@ -1,5 +1,6 @@
 ---
 layout: docs
+title: Datacol | Infrastructure Services
 ---
 
 ### Infrastructure Services

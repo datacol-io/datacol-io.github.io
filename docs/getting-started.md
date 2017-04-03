@@ -1,5 +1,6 @@
 ---
 layout: docs
+title: Datacol | Getting Started
 ---
 
 ## __Getting Started__

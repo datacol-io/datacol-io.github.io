@@ -1,5 +1,6 @@
 ---
 layout: docs
+title: Datacol | Managing Apps
 ---
 
 ### Creating a new app
