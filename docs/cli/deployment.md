@@ -35,7 +35,7 @@ In order to deploy an app, you should have `Dockerfile` at root of the project h
 * The Docker image must contain bash to run processes.
 
 <div class="alert alert-info">
-By default, we start containers to listen on 8080 port, If you want to listen on different port, Please set PORT as an environment variable.
+By default, we start containers to listen on 8080 port, If your app listens on different port, Please set PORT as an environment variable.
 </div>
 
     datacol env set PORT=3000

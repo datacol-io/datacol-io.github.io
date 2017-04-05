@@ -9,11 +9,12 @@ Getting started with Datacol is easy. Take following steps to get started -
 
 #### 1. Setup Google Cloud Project
 
-Go to [Google Console][1] and create a new project if you don't have one. Afterwards you need to enable following API in API Manager's Library section -
+Go to [Google Console][1] and create a new project if you don't have one. Optionally you need to enable following API in API Manager's Library section -
 
-* Google Cloud Resource Manager API
 * Cloud Deployment Manager API
 * Google Cloud Container Builder API
+
+If you don't know from where to enable, please skip and go to next section. Our CLI will guide you.
 
 #### 2. Install CLI
 In this step you will install Datacol Command Line Interface (CLI). You will use CLI to manage and scale your [applications][6], to provision [helm charts][5], to view [logs][7], and others. We currently provide CLI for Linux and Mac. 
@@ -24,7 +25,7 @@ In this step you will install Datacol Command Line Interface (CLI). You will use
     $ unzip /tmp/osx.zip -d /usr/local/bin
     
 **Install on Linux**
-  
+
     $ curl -Ls https://storage.googleapis.com/datacol-distros/linux.zip > /tmp/linux.zip
     $ unzip /tmp/linux.zip -d /usr/local/bin
 
