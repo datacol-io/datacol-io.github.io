@@ -18,15 +18,18 @@ docs:
         url: "/docs/cli/secrets"
       - title: "Logging"
         url: "/docs/cli/logging"
-      - title: "HTTPS/SSL"
-        url: "/docs/cli/ssl"
+      - title: "One-off commands"
+        url: "/docs/cli/run"
       - title: "Infrastructure Services"
         url: "/docs/cli/infra-services"
+      - title: "HTTPS/SSL"
+        url: "/docs/cli/ssl"
 
   - title: Infrastructure
+    url: "/docs/infra"
     children:
       - title: "CloudSQL"
-        url: "/docs/todo"
+        url: "/docs/cloudsql"
       - title: "Pub-Sub"
         url: "/docs/todo"
       - title: "Helm charts"

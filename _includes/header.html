@@ -11,6 +11,15 @@
       {{site.title}}
      </a>
    </div>
+
+   <ul class="nav navbar-nav navbar-right">
+      <li{% if page.layout == 'docs' %} class="active"{% endif %}> 
+        <a href="/docs"> Docs </a>
+      </li>
+      <li {% if page.layout == 'blog' %} class="active"{% endif %}> 
+        <a href="/blog"> Blog </a>
+      </li>
+   </ul>
  </div>
 </nav>
 

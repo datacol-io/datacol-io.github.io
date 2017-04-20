@@ -115,6 +115,14 @@ body {
   background-color: $btn-hover-color;
   color: #fff;
 }
+
+.navbar .divider-vertical {
+  margin-top: 14px;
+  height: 24px;
+  border-left: 1px solid #f2f2f2;
+  border-image: linear-gradient(to bottom, gray, rgba(0, 0, 0, 0)) 1 100%;
+}
+
 /*--------Footer----------*/
 .footer {
   background-color: #fff;
@@ -520,7 +528,7 @@ body {
 }
 .feature-item-icon img {
   width: 50px;
-  height: 50px;
+  height: auto;
 }
 .feature-item-msg {
   overflow: hidden;

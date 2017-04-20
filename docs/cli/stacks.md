@@ -8,7 +8,7 @@ title: Datacol | Stack
 A Stack is a private PaaS installed into your Google Cloud account. Once you have a Stack running you can use it to deploy and manage your applications and backing resources. You can create a stack from our [CLI](/docs/getting-started).
 
 ```
-datacol init -h
+| => datacol init -h
 NAME:
     init - create new stack
 
@@ -20,11 +20,11 @@ OPTIONS:
    --project value       GCP project name or id to use
    --zone value          zone for stack (default: "us-east1-b")
    --bucket value        GCP storage bucket
-   --nodes value         number of nodes in container cluster (default: 3)
+   --nodes value         number of nodes in container cluster (default: 2)
    --cluster value       name for existing Kubernetes cluster in GCP
    --machine-type value  name of machine-type to use for cluster (default: "n1-standard-1")
    --preemptible         use preemptible vm
-
+   --opt-out datacol     Opt-out from getting updates by email by datacol
 ```
 A standard Stack will include following resources -
 
@@ -36,9 +36,11 @@ A standard Stack will include following resources -
     * `roles/storage.admin`
     * `roles/cloudbuild.builds.editor`
     * `roles/container.developer`
+    * `roles/cloudsql.admin`
+    * `roles/cloudsql.client`
 
-* A Kubernetes cluster tuned for Datacol
-* A storage bucket
+* A Kubernetes cluster tuned for {{site.title}}
+* A storage bucket for storing [environment variables](/docs/cli/secrets) and build logs
 
 ### Deleting a Stack
 
