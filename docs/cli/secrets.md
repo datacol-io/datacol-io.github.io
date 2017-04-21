@@ -7,6 +7,8 @@ title: Datacol | Secrets
 
 Secrets in Datacol applications are configured using environment variables. Use `datacol env` to manage your environment variables -
 
+Examples
+
     datacol env
     datacol env set API_KEY=secret CLIENT_ID=client
     datacol env unset API_KEY

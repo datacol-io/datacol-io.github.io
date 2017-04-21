@@ -17,7 +17,7 @@ title: Datacol | Heroku
 
 * **Control & Security**
 
-  With Heroku, you lose fine-grained control and visibility over your servers. Installing custom software in your server stack is far from straightforward, and it’s not possible to SSH into a server to debug a CPU or memory issue.
+  With Heroku, you lose fine-grained control and visibility over your servers. Installing custom software in your server stack is far from straightforward.
 
   Also, you don’t have options around how to structure your environment networking and security. Your application run in a multi-tenant environment. While with {{site.title}}, you'll have a much lower level control over your environment and the underlying cloud resources.
 

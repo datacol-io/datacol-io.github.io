@@ -24,7 +24,7 @@ OPTIONS:
    --cluster value       name for existing Kubernetes cluster in GCP
    --machine-type value  name of machine-type to use for cluster (default: "n1-standard-1")
    --preemptible         use preemptible vm
-   --opt-out datacol     Opt-out from getting updates by email by datacol
+   --opt-out             Opt-out from getting updates by email by datacol
 ```
 A standard Stack will include following resources -
 

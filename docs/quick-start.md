@@ -13,7 +13,11 @@ title: Datacol | Quick Start
 
 * [Deploy a sample app][4]
 
+Here is a quick video of how an application like [Mattermost](https://about.mattermost.com/) can be deployed by {{site.title}} 
+
+[![asciicast](https://asciinema.org/a/10r6wpc15o8izsmpvh5sywcnk.png)](https://asciinema.org/a/10r6wpc15o8izsmpvh5sywcnk)
+
 [1]: /docs/getting-started
 [2]: /docs/getting-started#2-install-cli
-[3]: /docs/getting-started#3-stack-creation
+[3]: /docs/cli/stacks
 [4]: /docs/getting-started#4-deploy-a-sample-app

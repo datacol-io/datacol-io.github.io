@@ -5,6 +5,8 @@ description: >
   Datacol is the easiest way to deploy container-native applications on Google Cloud.
 keywords: Kubernetes, PaaS, Google Cloud, App engine
 
+permalink: pretty
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://datacol.io" # the base hostname & protocol for your site
 

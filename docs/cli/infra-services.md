@@ -5,7 +5,9 @@ title: Datacol | Infrastructure Services
 
 ### Infrastructure Services
 
-A Datacol stack includes a Kubernetes cluster, and best way to deploy infrastructure services or add-ons is to use [Helm](https://helm.sh). To install helm on datacol kubernetes run -
+A [stack](/docs/cli/stacks) includes a Kubernetes cluster, and the best way to deploy infrastructure services or add-ons is to use [Helm](https://helm.sh) package manager. 
+
+To install helm on a stack run -
 
 ```
 datacol helm init
@@ -26,7 +28,15 @@ Global Flags:
       --tiller-namespace string   namespace of tiller (default "kube-system")
 ```
 
-Afterwards you can install any Helm chart in Datacol Namespace on the cluster. For example, Let's install redis on datacol stack -
+Afterwards you can install any [Helm chart](https://github.com/kubernetes/charts) in namespace (`<stack-name>`) on the cluster. For example, Let's install redis on datacol stack -
 
     datacol helm install stable/redis
+
+### Interacting with Kubernetes
+
+  Though we provide a control-layer on top of Kubernetes, you can directly connect to cluster using `datacol kubectl` and go wild :), like -
+
+      datacol kubectl get pods,svc,deployments
+      datacol kubectl cluster-info
+      datacol kubectl apply -f redis-deployment.yaml
 
