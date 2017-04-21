@@ -4,14 +4,23 @@
   {% include head.html %}
   <body id="top">
     {% include header.html %}
-    <div class="main-content  row" style="margin: 110px 0 50px 0;">
-      <div class="col-md-2">
-
+    <div class="main-content" style="padding: 80px 0 40px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 markdown-body">
+            {{ content }}
+          </div>
+          <div class="col-md-4 hidden-sm hidden-xs">
+            <div class="subscribe-box" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+              <h4>Subscribe Our News Letter</h4>
+              <div class="form-group">
+                <input type="email" name="name" value="" class="form-control" placeholder="Email Address">
+              </div>
+              <button type="button" name="button" class="btn btn-subscribe">Subscribe</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-7 markdown-body">
-        {{ content }}
-      </div>
-      <div class="clearfix"></div>
     </div>
     {% include footer.html %}
   </body>
