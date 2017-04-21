@@ -26,7 +26,6 @@ docs:
         url: "/docs/cli/ssl"
 
   - title: Infrastructure
-    url: "/docs/infra"
     children:
       - title: "CloudSQL"
         url: "/docs/cloudsql"

@@ -243,10 +243,9 @@ datacol scale --count=3   # scale
 
         <h4> 3. Deploy a sample app </h4>
 {% highlight shell %}
-> git clone git@github.com:datacol-io/node-demo.git && cd node-demo
+> git clone git@github.com:datacol-io/samples.git && cd samples/node-demo
 
-> export STACK=demo
-> datacol apps create
+> STACK=demo datacol apps create
 > datacol deploy
 
 > curl http://<IP>:8080
@@ -258,7 +257,7 @@ hello World
       </div>
 
       <div class="modal-footer">
-        <a class="btn bg-green" data-dismiss="modal" href="https://storage.googleapis.com/datacol-distros/osx" target="_blank">
+        <a class="btn bg-green" href="https://storage.googleapis.com/datacol-distros/osx.zip">
           Download CLI
         </a>
       </div>

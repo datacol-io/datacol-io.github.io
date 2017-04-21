@@ -47,8 +47,8 @@ In this step we'll show you how to launch your first app and interact with it. A
 
 Let's start with a sample to get started -
 
-    $ git clone git@github.com:datacol-io/node-demo.git
-    $ cd node-demo && ls
+    $ git clone git@github.com:datacol-io/samples.git
+    $ cd samples/node-demo && ls
     Dockerfile  index.js  package.json
 
 To create a new app under demo stack - 
@@ -60,7 +60,7 @@ When you first create an app, it might take 3-5 minutes for [LoadBalancer][4] to
 
 Afterwards just check if the service is running at the IP -
 
-    $ curl http://IP:8080
+    $ curl http://<IP>:8080
     hello world!
 
 [1]: https://console.cloud.google.com/
