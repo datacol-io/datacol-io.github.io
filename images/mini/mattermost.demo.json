@@ -1,7 +1,7 @@
 {
   "version": 1,
   "width": 210,
-  "height": 40,
+  "height": 23,
   "duration": 145.400154,
   "command": "/bin/bash -l",
   "title": null,

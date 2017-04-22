@@ -1,5 +1,5 @@
 # Site settings
-title: DataCol
+title: Datacol
 email: dinesh@codecrux.com
 description: >
   Datacol is the easiest way to deploy container-native applications on Google Cloud.
@@ -10,8 +10,8 @@ permalink: pretty
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://datacol.io" # the base hostname & protocol for your site
 
-twitter_username: datacol
-github_username:  datacol
+twitter_username: datacolhq
+github_username:  datacol-io
 
 # Build settings
 markdown: kramdown

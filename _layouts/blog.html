@@ -11,13 +11,15 @@
             {{ content }}
           </div>
           <div class="col-md-4 hidden-sm hidden-xs">
-            <div class="subscribe-box" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-              <h4>Subscribe Our News Letter</h4>
-              <div class="form-group">
-                <input type="email" name="name" value="" class="form-control" placeholder="Email Address">
+            <form method="POST" class='subscribe-form'>
+              <div class="subscribe-box" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+                <h4>Subscribe to our newsletter</h4>
+                <div class="form-group">
+                  <input type="email" name="email" value="" class="form-control" placeholder="Email Address">
+                </div>
+                <button type="button" name="button" class="btn btn-subscribe">Subscribe</button>
               </div>
-              <button type="button" name="button" class="btn btn-subscribe">Subscribe</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

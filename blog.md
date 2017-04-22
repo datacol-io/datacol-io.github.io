@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="blog-banner">
-  <h1>The official blog from the team at Datacol</h1>
+  <h2>The official blog from the team at Datacol</h2>
 </div>
 <div class="container">
   <div class="blogs-wraper">

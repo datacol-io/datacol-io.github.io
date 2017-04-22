@@ -2,7 +2,7 @@
 layout: blog
 title: Deploying Mattermost
 author: '@dinesh_oi'
-excerpt: We outline how a real world example like Mattermost - an open source alternative to Slack, can be deployed by Datacol with ease.
+excerpt: We outline how a real world example like Mattermost - an open source alternative of Slack, can be deployed by Datacol with ease.
 ---
 
 ## Deploying Mattermost with Datacol
@@ -19,7 +19,7 @@ In summary, we will
 
 #### Create a stack
 
-At first, go ahead and download our [CLI](/docs/getting-started) and create a new stack. 
+At first, go ahead and download our [CLI](/docs/getting-started) and create a new [stack](/docs/cli/stacks). 
   
     datacol init --project mattermost-at-gcp --stack mattermost
 
@@ -32,7 +32,7 @@ Now you are all set to deploy any container based app into cluster by running `d
 
 #### Create a Database backend
 
-To provision a [CloudSQL](/docs/cloudsql) mysql instance, run 
+Mattermost requires a database backend. We always recommend to use managed services by cloud than by yourself unless you have a good reason to do so. To provision a [CloudSQL](/docs/cloudsql) mysql instance, run 
 
     datacol infra create mysql --name mysql-1111
 

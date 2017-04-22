@@ -15,6 +15,30 @@
     });
   };
 
+  var subscribeForm = function(){
+    $(".subscribe-form").find('.btn-subscribe').on('click', function(ev){
+      ev.preventDefault();
+      var form = $(ev.currentTarget).closest('form')
+      var emailF = form.find("[name='email']")
+      if(emailF.val().length > 0){
+        $.ajax({
+          method: 'POST',
+          url: "http://cli-analytics.datacol.io/subscribe ",
+          data: JSON.stringify({ email: emailF.val() }),
+          contentType: 'application/json',
+          success: function(data){
+            emailF.empty()
+            emailF.parent().append($("p").html("Awesome! thrilled to have you."))
+          },
+          failure: function(err){
+            emailF.empty()
+            emailF.parent().append($("p").html("Unknown error"))
+          }
+        })
+      }
+    })
+  }
+
   var contactForm = function(selector){
     var formUrl = 'http://getsimpleform.com/messages/ajax?form_api_token=88ed0c44bcf06188fac43ee443f49fa2';
     var form = $(selector);
@@ -52,6 +76,7 @@
 
   $(function() {
     contactForm('#contact');
+    subscribeForm();
     scrollNav();
     initTracking();
   });
