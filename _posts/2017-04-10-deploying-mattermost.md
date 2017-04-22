@@ -8,7 +8,7 @@ excerpt: We outline how a real world example like Mattermost - an open source al
 ## Deploying Mattermost with Datacol
 
 
-In this post we will deploy [Mattermost](https://about.mattermost.com) - an open source alternative of [Slack](https://slack.com) using our [CLI](/docs/cli) to demonstrate something more than "Hello World".
+In this post we will deploy [Mattermost](https://about.mattermost.com) - an open source alternative of [Slack](https://slack.com) using our [CLI](/docs/getting-started) to demonstrate something more than "Hello World".
 
 At its core, Mattermost is an open source, private cloud alternative to proprietary SaaS messaging for teams. It is a great solution for communities and companies who wants to privately host their own messaging service or for developers who are looking forward to build and evolve their own chat platforms.
 
