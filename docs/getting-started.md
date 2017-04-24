@@ -9,7 +9,7 @@ Getting started with Datacol is easy. Take following steps to get started -
 
 #### 1. Setup Google Cloud Project
 
-Go to [Google Console][1] and create a new project if you don't have one. Optionally you need to enable following API in API Manager's Library section -
+Go to [Google Console][1] and create a new project if you don't have one. Optionally you need to enable following APIs in API Manager's Library section -
 
 * Cloud Deployment Manager API
 * Google Cloud Container Builder API

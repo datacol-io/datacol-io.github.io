@@ -16,24 +16,23 @@
   };
 
   var subscribeForm = function(){
-    $(".subscribe-form").find('.btn-subscribe').on('click', function(ev){
+    var form = $(".subscribe-form"), 
+        emailF = form.find("[name='email']"),
+        group  = form.find(".form-group");
+
+    form.find('.btn-subscribe').unbind().click(function(ev){
       ev.preventDefault();
-      var form = $(ev.currentTarget).closest('form')
-      var emailF = form.find("[name='email']")
+
       if(emailF.val().length > 0){
         $.ajax({
-          method: 'POST',
-          url: "http://cli-analytics.datacol.io/subscribe ",
-          data: JSON.stringify({ email: emailF.val() }),
-          contentType: 'application/json',
-          success: function(data){
-            emailF.empty()
-            emailF.parent().append($("p").html("Awesome! thrilled to have you."))
-          },
-          failure: function(err){
-            emailF.empty()
-            emailF.parent().append($("p").html("Unknown error"))
-          }
+          dataType: 'jsonp',
+          url: "http://cli-analytics.datacol.io/subscribe/datacol",
+          data: { email: emailF.val() },
+        }).done(function(){
+          setTimeout(function(){
+            emailF.val('')
+            group.after($("<p></p>").html("Awesome! thrilled to have you."))
+          }, 600);
         })
       }
     })

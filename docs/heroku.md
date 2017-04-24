@@ -5,7 +5,7 @@ title: Datacol | Heroku
 
 ## Datacol vs Heroku
 
-[Heroku](https://heroku.com) is a cloud Platform-as-a-Service (PaaS) supporting several programming languages that is used as a web application deployment model. Heroku is a great way to quickly build, innovate, and deploy a new product or service. It can be an excellent choice in early stage since not having to worry about operational issues reduce the time to market significantly. Heroku is the easiest place to deploy, until your apps grow more complicated. 
+[Heroku](https://heroku.com) is a cloud Platform-as-a-Service (PaaS) supporting several programming languages that is used as a web application deployment model. Heroku is a great way to quickly build, innovate, and deploy a new product or service. It can be an excellent choice in early stage since not having to worry about operational issues reduce the time to market significantly.
 
 {{site.title}} provides similar features and developer experience but doesn't limit flexibility and scalability provided by cloud. There comes a point, however, where many organizations outgrow their one-size-fits-all PaaS. Some common reasons include:
   
@@ -23,7 +23,7 @@ title: Datacol | Heroku
 
 * **Platform Limitations**
 
-  Heroku does not provide any regional redundancy and runs ons AWS in the US East region or Europe West region. You can run apps in multiple regions and reduce risk of outage with {{site.title}}. 
+  Heroku does not provide any regional redundancy and runs on AWS in the US East region or Europe West region. You can run apps in multiple regions and reduce risk of outage with {{site.title}}. 
 
 Though {{site.title}} provides a Heroku type control-layer over Google cloud, it does not limit your developer experience. You can anytime delete {{site.title}} infrastructure from your account and applications will still be running and portable, giving you similar flexibility and control of a cloud.
 

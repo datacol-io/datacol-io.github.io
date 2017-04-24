@@ -5,7 +5,7 @@ title: Datacol | CloudSQL
 
 ### CloudSQL Integration
 
-{{site.title}} provides tight integration with cloud services like [CloudSQL](https://cloud.google.com/sql/). It's easy to create CloudSQL resources and manage them as a part of stack.
+{{site.title}} provides tight integration with cloud services like [CloudSQL](https://cloud.google.com/sql/). It's easy to create resources and manage them as a part of stack.
 
 _We only support MySQL (Second Generation) in alpha release._
 

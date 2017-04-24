@@ -12,7 +12,7 @@ In this post we will deploy [Mattermost](https://about.mattermost.com) - an open
 
 At its core, Mattermost is an open source, private cloud alternative to proprietary SaaS messaging for teams. It is a great solution for communities and companies who wants to privately host their own messaging service or for developers who are looking forward to build and evolve their own chat platforms.
 
-In summary, we will 
+In summary, we will
  * create a new [stack](/docs/cli/stacks)
  * create a [CloudSQL](/docs/cloudsql) (mysql) instance
  * [link](/docs/cloudsql) and [deploy](/docs/deployment) Mattermost on cluster
