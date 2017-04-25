@@ -397,7 +397,20 @@ body {
     font-weight: 400;
   }
 }
-
+@media (max-width: 480px) {
+  .banner-message h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .banner-message h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .top-nav {
+    right: 20px;
+  }
+}
 .cta-wrapper {
   padding: 60px 0;
 }
@@ -477,6 +490,12 @@ body {
 }
 .step-tabs > li:last-child > a {
   border-right: 0;
+}
+@media (max-width: 480px) {
+  .step-tabs > li > a {
+    font-size: 12px;
+    padding: 14px 0;
+  }
 }
 .step-item {
   margin-bottom: 15px;
@@ -573,7 +592,11 @@ body {
     color: #f6b036;
   }
 }
-
+@media (max-width: 480px) {
+  .signup-wraper .box {
+    text-align: center;
+  }
+}
 .signup-email-wraper::after,
 .signup-email-wraper::before {
   content: '';
