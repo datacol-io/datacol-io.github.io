@@ -73,11 +73,48 @@
     }
   };
 
+
+  function getOS() {
+    var userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        os = null;
+
+    if (macosPlatforms.indexOf(platform) !== -1) {
+      os = 'Mac OS';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+      os = 'iOS';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      os = 'Windows';
+    } else if (/Android/.test(userAgent)) {
+      os = 'Android';
+    } else if (!os && /Linux/.test(platform)) {
+      os = 'Linux';
+    }
+
+    return os;
+  }
+
+  changeCLIUrl = function(){
+    var baseurl = "https://storage.googleapis.com/datacol-distros/";
+    var os = getOS()
+    if(os == "Mac OS" || os == "iOS") {
+      baseurl += "os.zip"
+    } else {
+      baseurl += "linux.zip"
+    }
+
+    $("#try-modal").find('.modal-footer .bg-green').attr('href', baseurl)
+  }
+
   $(function() {
     contactForm('#contact');
     subscribeForm();
     scrollNav();
     initTracking();
+    changeCLIUrl()
   });
 
 })(jQuery);
