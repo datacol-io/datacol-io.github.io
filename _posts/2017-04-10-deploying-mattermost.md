@@ -17,6 +17,19 @@ In summary, we will
  * create a [CloudSQL](/docs/cloudsql) (mysql) instance
  * [link](/docs/cloudsql) and [deploy](/docs/deployment) Mattermost on cluster
 
+
+```
+datacol init --project mattermost-at-gcp --stack mattermost
+
+git clone git@github.com:datacol-io/samples.git && cd samples/mattermost
+STACK=mattermost datacol apps create
+datacol infra create mysql --name mysql-1111
+datacol infra link mysql-1111
+
+datacol deploy
+datacol run rake db:migrate
+```
+
 #### Create a stack
 
 At first, go ahead and download our [CLI](/docs/getting-started) and create a new [stack](/docs/cli/stacks). 

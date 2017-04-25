@@ -37,7 +37,7 @@ docs:
   - title: Operations
     children:
       - title: "Architecture"
-        url: "/docs/todo"
+        url: "/docs/architecture"
       - title: "Security"
         url: "/docs/todo"
       - title: "Support"
