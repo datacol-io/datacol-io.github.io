@@ -67,12 +67,11 @@
   var initTracking = function(){
     if(window.analytics){
       analytics.ready(function(){
-        analytics.trackLink($('.banner-actions a.bg-green'), 'Request Demo clicked');
-        analytics.trackLink($('.freetrail-btn a'), 'Try clicked');
+        analytics.trackLink($('.banner-actions a.bg-green').get(0), 'Get Started clicked');
+        analytics.trackLink($('#try-modal .bg-green').get(0), 'Download CLI clicked');
       });
     }
   };
-
 
   function getOS() {
     var userAgent = window.navigator.userAgent,
@@ -101,7 +100,7 @@
     var baseurl = "https://storage.googleapis.com/datacol-distros/";
     var os = getOS()
     if(os == "Mac OS" || os == "iOS") {
-      baseurl += "os.zip"
+      baseurl += "osx.zip"
     } else {
       baseurl += "linux.zip"
     }
