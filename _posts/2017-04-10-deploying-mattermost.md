@@ -27,7 +27,6 @@ datacol infra create mysql --name mysql-1111
 datacol infra link mysql-1111
 
 datacol deploy
-datacol run rake db:migrate
 ```
 
 #### Create a stack
@@ -73,12 +72,6 @@ To finally deploy the app into cluster run -
     datacol deploy
 
 It will use `Dockerfile` to build a docker image and save into the [Google registry](https://cloud.google.com/container-registry/). After a successful build, it will deploy Mattermost into the cluster and wait for the `LoadBalancer` for an ip.
-
-#### Run migrations
-
-You need to run database migrations to create required tables. Run following to get up and running.
-
-    datacol run rake db:migrate 
 
 ### Conclusion
 

@@ -67,7 +67,7 @@
   var initTracking = function(){
     if(window.analytics){
       analytics.ready(function(){
-        analytics.trackLink($('.banner-actions a.bg-green').get(0), 'Get Started clicked');
+        // analytics.trackLink($('.banner-actions a.bg-green').get(0), 'Get Started Clicked');
         analytics.trackLink($('#try-modal .bg-green').get(0), 'Download CLI clicked');
       });
     }
