@@ -23,7 +23,7 @@ datacol init --project mattermost-at-gcp --stack mattermost
 
 git clone git@github.com:datacol-io/samples.git && cd samples/mattermost
 STACK=mattermost datacol apps create
-datacol infra create mysql --name mysql-1111
+datacol infra create mysql --name=mysql-1111
 datacol infra link mysql-1111
 
 datacol deploy
@@ -46,7 +46,7 @@ Now you are all set to deploy any container based app into cluster by running `d
 
 Mattermost requires a database backend. We always recommend to use managed services by cloud than by yourself unless you have a good reason to do so. To provision a [CloudSQL](/docs/cloudsql) mysql instance, run 
 
-    datacol infra create mysql --name mysql-1111
+    datacol infra create mysql --name=mysql-1111
 
 It will provision a MySQL second generation instance along with a database and an user. To see information of a resource -
 
