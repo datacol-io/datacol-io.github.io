@@ -7,7 +7,7 @@ title: Datacol | CloudSQL
 
 {{site.title}} provides tight integration with cloud services like [CloudSQL](https://cloud.google.com/sql/). It's easy to create resources and manage them as a part of stack.
 
-_We only support MySQL (Second Generation) in alpha release._
+<p class="alert alert-info"> We support MySQL (Second Generation) and Postgresql currently. </p>
 
 #### How to create
   To create a MySQL second generation resource, run
@@ -22,9 +22,8 @@ Available options
 | Name |  Description   |  Value | 
 |-------|---------|
 | `name` | Name of the resource | `/[a-z0-9]([-a-z0-9]*[a-z0-9])?/`
-| `db_version` | database version to use | `MySQL_5_7`, `MySQL_5_6`
+| `db_version` | database version to use | `MySQL_5_7`, `MySQL_5_6`, `POSTGRES_9_6`
 | `tier`  | database machine type to use | `db-{f1-micro,g1-small...db-n1-highmem-32}` more [at](https://cloud.google.com/sql/pricing#2nd-gen-instance-pricing)
-
 
 #### Get information
   To get information and settings, run

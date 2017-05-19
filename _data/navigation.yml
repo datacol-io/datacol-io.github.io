@@ -24,6 +24,8 @@ docs:
         url: "/docs/cli/infra-services"
       - title: "HTTPS/SSL"
         url: "/docs/cli/ssl"
+      - title: "Update"
+        url: "/docs/cli/update"
 
   - title: Infrastructure
     children:

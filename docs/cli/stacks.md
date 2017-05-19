@@ -10,37 +10,31 @@ A Stack is a private PaaS installed into your Google Cloud account. Once you hav
 ```
 | => datacol init -h
 NAME:
-    init - create new stack
+   datacol init - create new stack
 
 USAGE:
-    init [command options] [arguments...]
+   datacol init [command options] [arguments...]
 
 OPTIONS:
-   --stack value         Name of stack (default: "dev")
-   --project value       GCP project name or id to use
-   --zone value          zone for stack (default: "us-east1-b")
+   --stack value         Name of stack (default: "demo")
+   --zone value          GCP zone for stack (default: "us-east1-b")
    --bucket value        GCP storage bucket
    --nodes value         number of nodes in container cluster (default: 2)
    --cluster value       name for existing Kubernetes cluster in GCP
    --machine-type value  name of machine-type to use for cluster (default: "n1-standard-1")
-   --preemptible         use preemptible vm
-   --opt-out             Opt-out from getting updates by email by datacol
+   --preemptible         use preemptible vm (default: true)
+   --opt-out datacol     Opt-out from getting updates via email from datacol (default: false)
+   --password value      api password for the stack
+   --help, -h            show help (default: false)
 ```
+
 A standard Stack will include following resources -
 
 * A [Deployment](https://cloud.google.com/deployment-manager/docs/) by name _demo_ (name of stack as given above)
-* A Service account for the stack by name `dcolctl@<project>.iam.gserviceaccount.com` having roles -
-  
-    * `roles/viewer`
-    * `roles/deploymentmanager.editor`
-    * `roles/storage.admin`
-    * `roles/cloudbuild.builds.editor`
-    * `roles/container.developer`
-    * `roles/cloudsql.admin`
-    * `roles/cloudsql.client`
-
+* A Service account for the stack by name `dcolctl@<project>.iam.gserviceaccount.com` having appropriate IAM role.
 * A Kubernetes cluster tuned for {{site.title}}
 * A storage bucket for storing [environment variables](/docs/cli/secrets) and build logs
+* A compute instance of type `f1-mico`
 
 ### Deleting a Stack
 

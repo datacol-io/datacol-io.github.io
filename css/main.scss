@@ -97,11 +97,12 @@ body {
   min-height: 50px;
 }
 .navbar-brand {
-  padding: 16px 0 15px 0;
+  padding: 0;
   font-size: 40px;
 }
-.navbar-brand img {
-  height: 45px;
+.navbar-brand > img {
+  height: 100%;
+  width: auto;
 }
 .navbar-default .navbar-nav .freetrail-btn > a {
   background-color: $btn-color;

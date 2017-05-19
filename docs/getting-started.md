@@ -7,17 +7,12 @@ title: Datacol | Getting Started
 
 Getting started with Datacol is easy. Take following steps to get started -
 
-#### 1. Setup Google Cloud Project
+#### 1. Get a GCP account
 
-Go to [Google Console][1] and create a new project if you don't have one. Optionally you need to enable following APIs in API Manager's Library section -
-
-* Cloud Deployment Manager API
-* Google Cloud Container Builder API
-
-If you don't know from where to enable, please skip and go to next section. Our CLI will guide you.
+If you don't have a Google cloud account, please go ahead and [create](https://cloud.google.com/) one. GCP provides you $300 free credits for 12-months.
 
 #### 2. Install CLI
-In this step you will install Datacol Command Line Interface (CLI). You will use CLI to manage and scale your [applications][6], to provision [helm charts][5], to view [logs][7], and others. We currently provide CLI for Linux and Mac. 
+In this step you will install Datacol Command Line Interface (CLI). You will use CLI to manage and scale your [applications][6], to provision [cloudsql][5] databases, to view [logs][7], and others. We currently provide CLI for Linux, Mac and Windows. 
    
 **Install on Mac**
   
@@ -32,15 +27,15 @@ In this step you will install Datacol Command Line Interface (CLI). You will use
 We recommend to move datacol executable in your bin path. Make sure it's installed correctly by running -
 
     $ datacol -v
-    datacol version 0.0.1-alpha
+    datacol version 1.0.0-alpha.4
 
 #### 3. Stack creation
 
-To create a new stack, you must get [Google cloud][1] project name or identifier and initialize a new stack using -
+Create a base stack to get up and running. You can later share stack details with your team members to collaborate.
  
-    datacol init --project <project> --stack demo
+    datacol init --stack demo
 
-It will create a [Datacol Stack](/docs/cli/stacks#creating-a-stack) in your GCP account with required resources. It will take couple of minutes to complete. Hit `Ctrl-C` if you want to cancel the process. 
+It will install a [Datacol Stack](/docs/cli/stacks#creating-a-stack) by name `demo` in your GCP account with required resources. It will take couple of minutes to complete. Hit `Ctrl-C` if you want to cancel the process. 
 
 #### 4. Deploy a sample app
 In this step we'll show you how to launch your first app and interact with it. Any application having [`Dockerfile`][2] at root level should be eligible for deployment. If you don't have one, Please follow guidelines for creating [Dockerfile][2] on [Docker website][3]. 
@@ -67,6 +62,6 @@ Afterwards just check if the service is running at the IP -
 [2]: https://docs.docker.com/engine/reference/builder/ 
 [3]: https://docs.docker.com/
 [4]: https://cloud.google.com/load-balancing/
-[5]: https://helm.sh/
+[5]: /docs/cloudsql
 [6]: /docs/cli/apps
 [7]: /docs/cli/logging

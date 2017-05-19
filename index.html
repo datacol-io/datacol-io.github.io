@@ -19,10 +19,9 @@ layout: landing-page
 				<div class="why-item">
 					<img src="/images/powerfull.png" alt="" />
 					<div class="why-item-txt">
-						<h4>Productive and Powerful</h4>
+						<h4>Productive</h4>
 						<p>Deploy <a href="https://12factor.net/" target="_blank"> 12-factor</a> based applications and supercharge your workflow using better developer tools and integrations.</p>
 						<p><i> Focus on your "Apps" not on "Ops". No more App-engine idiosyncrasies. </i></p>
-
 					</div>
 				</div>
 			</div>
@@ -31,9 +30,9 @@ layout: landing-page
 				<div class="why-item">
 					<img src="/images/optimized.png" alt="" />
 					<div class="why-item-txt">
-						<h4>Inexpensive & Optimized </h4>
-						<p>{{site.title}} optimizes your environment with best of community knowledge, providing seamless integration with cloud services.</p>
-						<i>Get lower bills via <a href="https://cloud.google.com/compute/pricing" target="_blank"> sustained discount</a>. </i>
+						<h4> Optimized </h4>
+						<p>{{site.title}} optimizes your environment with best of community knowledge, providing seamless integration with cloud services. </p>
+						<p> It can provision and link Cloudsql, Pubsub, Storage from CLI. </p>
 					</div>
 				</div>
 			</div>
@@ -130,13 +129,11 @@ layout: landing-page
 								<p> You can deploy multiple apps in cluster and share services among them. </p>
 
 {% highlight shell %}
-curl -Ls https://storage.googleapis.com/datacol-distros/osx.zip > /tmp/osx.zip 
-unzip /tmp/osx.zip -d /usr/local/bin
-
+curl -Ls https://goo.gl/mBqqDj | bash
 {% endhighlight %}
 
 {% highlight shell %}
-datacol init --project <project>
+datacol init
 {% endhighlight %}
 
 							</div>
@@ -144,9 +141,8 @@ datacol init --project <project>
 					</div>
 
 					<div class="col-md-6">
-						<asciinema-player src="images/mini/setup.json" poster="npt:2:34"
-						 theme="solarized-dark"></asciinema-player>
-				</div>
+						<asciinema-player src="images/mini/setup.json" poster="npt:2:34" theme="tango"></asciinema-player>
+				  </div>
 				</div>
 			</div>
 
@@ -234,22 +230,19 @@ datacol scale --count=3   # scale
 
       <div class="modal-body">
         <p> Getting started with {{site.title}} is easy. It will take almost 10 minutes to go from zero to first successful deployment. </p>
-        <small> <i> You will need a <a href="https://console.cloud.google.com" target="_blank"> Google Cloud Project </a>. Create a new one if you don't have from <a href="https://console.cloud.google.com" target="_blank"> console </a> .</i> </small>
 
         <h4> 1. Download CLI </h4>
 
 {% highlight shell %}
-> curl -Ls https://storage.googleapis.com/datacol-distros/osx.zip > /tmp/osx.zip 
-> unzip /tmp/osx.zip -d /usr/local/bin
+> curl -Ls https://goo.gl/mBqqDj | bash 
 {% endhighlight %}
 
         <h4> 2. Create a new stack </h4>
-        <p> Get project identifier from <a href="https://console.cloud.google.com" target="_blank"> Google Console </a> or create a new one. </p>
 
 {% highlight shell %}
-> datacol init --project gcp-demo --stack demo
+> datacol init --stack demo
 {% endhighlight %}
-        <p> It will create a new stack by name <i> demo </i> under <i> gcp-demo </i> project. </p>
+        <p> It will create a new stack by the name <i> demo </i>. </p>
 
         <h4> 3. Deploy a sample app </h4>
 {% highlight shell %}
@@ -263,7 +256,7 @@ hello World
 {% endhighlight %}
 
         <p> If you face any difficulty, please don't hesitate to reach out or send your suggestions
-        <a href="https://github.com/datacol-io/samples/issues/new" target="_blank"> here </a>.
+        <a href="https://github.com/datacol-io/datacol/issues/new" target="_blank"> here</a>.
       </div>
 
       <div class="modal-footer">
