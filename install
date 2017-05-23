@@ -1,0 +1,48 @@
+#!/usr/bin/env sh
+
+# Invoking this script:
+#
+# To install the latest stable version:
+# curl -sSL https://datacol.io/install | sh
+
+set -euf
+
+PLATFORM='unknown'
+unamestr=`uname`
+
+case "$unamestr" in
+  'Linux')      PLATFORM='linux';;
+  'Darwin')     PLATFORM='osx';;
+  *);;
+esac
+
+if [[ "$PLATFORM" == 'unknown' ]]; then
+  echo "We don't provide datacol CLI for $unamestr yet. Please contact at https://www.datacol.io." && exit 1
+fi
+
+VERSION=$(curl -s https://storage.googleapis.com/datacol-distros/binaries/latest.txt)
+NAME="$PLATFORM.zip"
+URL="https://storage.googleapis.com/datacol-distros/binaries/$VERSION/$NAME"
+
+echo "==================================="
+echo "Downloading DATACOL CLI version: $VERSION"
+
+TMP_PATH=$(mktemp -d)
+response=$(curl --write-out %{http_code} --silent --output /dev/null $URL)
+
+if [[ "$response" != '200' ]]; then
+  echo "Got $response with $URL" && exit 1
+fi
+
+BIN_PATH=$TMP_PATH/$NAME
+curl -Ls $URL > $BIN_PATH && unzip -q $BIN_PATH -d $TMP_PATH
+chmod +x $TMP_PATH/datacol && mv $TMP_PATH/datacol /usr/local/bin
+
+cat << EOF
+Datacol CLI is installed successfully in your PATH. 
+
+To learn more about datacol, execute:
+
+    $ datacol --help
+
+EOF
