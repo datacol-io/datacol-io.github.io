@@ -3,7 +3,7 @@
 # Invoking this script:
 #
 # To install the latest stable version:
-# curl -sSL https://datacol.io/install | sh
+# curl -sSL https://www.datacol.io/install | sh
 
 set -euf
 
