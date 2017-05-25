@@ -1,15 +1,10 @@
 
 (function($) {
   var scrollNav = function() {
-    $('a.scroll-nav').click(function(){  
-      $(".active").removeClass("active");
-      $(this).closest('li').addClass("active");
-      var theClass = $(this).attr("class");
-      $('.'+theClass).parent('li').addClass('active');
-      
+    $('a.scroll-nav').click(function(){
       //Animate
       $('html, body').stop().animate({
-          scrollTop: $( $(this).attr('href') ).offset().top - 160
+          scrollTop: $($(this).attr('href')).offset().top - 160
       }, 400);
       return false;
     });
@@ -66,9 +61,11 @@
 
   var initTracking = function(){
     if(window.analytics){
+      var event = 'GA clicked'
       analytics.ready(function(){
-        // analytics.trackLink($('.banner-actions a.bg-green').get(0), 'Get Started Clicked');
-        analytics.trackLink($('#try-modal .bg-green').get(0), 'Download CLI clicked');
+        analytics.trackLink($('.banner-actions a.bg-green').get(0), event, { button: "Get started" });
+        analytics.trackLink($('.banner-actions a.btn-how-works').get(0), event, { button: "how it works" });
+        analytics.trackLink($('#try-modal .bg-green').get(0), event, { button: 'Download CLI' });
       });
     }
   };
