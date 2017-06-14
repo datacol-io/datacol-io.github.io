@@ -24,7 +24,9 @@ docs:
         url: "/docs/cli/infra-services"
       - title: "HTTPS/SSL"
         url: "/docs/cli/ssl"
-      - title: "Update"
+      - title: "Login"
+        url: "/docs/cli/login"
+      - title: "Upgrade"
         url: "/docs/cli/update"
 
   - title: Infrastructure
@@ -33,7 +35,7 @@ docs:
         url: "/docs/cloudsql"
       - title: "Pub-Sub"
         url: "/docs/todo"
-      - title: "Helm charts"
+      - title: "Third-party services"
         url: "/docs/cli/infra-services"
 
   - title: Operations
