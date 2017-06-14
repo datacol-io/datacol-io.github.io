@@ -7,7 +7,7 @@ excerpt: Today, I’m happy to announce that the Datacol core is now open source
 
 ## Datacol is Now Open Source
 
-Datacol provides Heroku-like workflow for deploying apps in your cloud account (AWS/GCP).
+[Datacol][5] provides Heroku-like workflow for deploying apps in your cloud account (AWS/GCP). Please follow this [guide][6] to get started.
 
 Today, I'm happy to announce that the Datacol CLI is now open source software under the Apache2 license! The source code is hosted on [GitHub][1] for your viewing pleasure.
 
@@ -51,3 +51,4 @@ I hope it will take us closer to the community we've been working towards over t
 [3]: /docs/getting-started
 [4]: https://github.com/datacol-io/datacol/releases/tag/v1.0.0-alpha.4
 [5]: https://www.datacol.io
+[6]: /docs/quick-start

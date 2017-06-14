@@ -9,7 +9,7 @@ Getting started with Datacol is easy. Take following steps to get started -
 
 #### 1. Get a GCP account
 
-If you don't have a Google cloud account, please go ahead and [create](https://cloud.google.com/) one. GCP provides you $300 free credits for 12-months.
+If you don't have a Google cloud account, please go ahead and [create](https://cloud.google.com/) one. GCP provides you $300 free credits for 12-months which should be more than enough for a test drive.
 
 #### 2. Install CLI
 In this step you will install Datacol Command Line Interface (CLI). You will use CLI to manage and scale your [applications][6], to provision [cloudsql][5] databases, to view [logs][7], and others. We currently provide CLI for Linux, Mac and Windows. 
@@ -27,7 +27,7 @@ In this step you will install Datacol Command Line Interface (CLI). You will use
 We recommend to move datacol executable in your bin path. Make sure it's installed correctly by running -
 
     $ datacol -v
-    datacol version 1.0.0-alpha.4
+    datacol version 1.0.0-alpha.5
 
 #### 3. Stack creation
 
