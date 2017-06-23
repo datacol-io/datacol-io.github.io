@@ -21,7 +21,7 @@ In summary, we will
 ```
 datacol init --project mattermost-at-gcp --stack mattermost
 
-git clone git@github.com:datacol-io/samples.git && cd samples/mattermost
+git clone https://github.com/datacol-io/samples.git && cd samples/mattermost
 STACK=mattermost datacol apps create
 datacol infra create mysql --name=mysql-1111
 datacol infra link mysql-1111
@@ -37,7 +37,7 @@ At first, go ahead and download our [CLI](/docs/getting-started) and create a ne
 
 It will authenticate with your Google account and provision a {{ site.title }} infrastructure in your account. Enter into the app directory and create a new datacol app -
 
-    git clone git@github.com:datacol-io/samples.git && cd samples/mattermost
+    git clone https://github.com/datacol-io/samples.git && cd samples/mattermost
     STACK=mattermost datacol apps create
 
 Now you are all set to deploy any container based app into cluster by running `datacol deploy`.

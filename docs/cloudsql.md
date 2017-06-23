@@ -13,7 +13,7 @@ title: Datacol | CloudSQL
   To create a MySQL second generation resource, run
 
     > datacol infra create mysql
-    Creating mysql-31516 (mysql: activation_policy="ALWAYS" db_version="MYSQL_5_7" tier="db-g1-small" tier="db-n1-standard-1")
+    Creating mysql-31516 (mysql: activation_policy="ALWAYS" db_version="MYSQL_5_7" tier="db-n1-standard-1")
 
   It will provision a managed MySQL instance, a database(`app`) and an user with strong password.
 

@@ -42,7 +42,7 @@ In this step we'll show you how to launch your first app and interact with it. A
 
 Let's start with a sample to get started -
 
-    $ git clone git@github.com:datacol-io/samples.git
+    $ git clone https://github.com/datacol-io/samples.git
     $ cd samples/node-demo && ls
     Dockerfile  index.js  package.json
 
