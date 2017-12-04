@@ -34,7 +34,7 @@
   }
 
   var contactForm = function(selector){
-    var formUrl = 'http://getsimpleform.com/messages/ajax?form_api_token=88ed0c44bcf06188fac43ee443f49fa2';
+    var formUrl = 'https://getsimpleform.com/messages/ajax?form_api_token=88ed0c44bcf06188fac43ee443f49fa2';
     var form = $(selector);
 
     form.on('submit', function(e){
